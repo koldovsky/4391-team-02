@@ -1,0 +1,43 @@
+/* Illia Stefanov */
+.work__subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #DDE5ED;
+  margin: 0;
+}
+.work__title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+.work {
+  background-image: url("raw.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+  justify-content: flex-start; 
+  padding-top: 3em;       
+  font-family: 'Nunito', sans-serif;
+  color: #DDE5ED;         
+}
+.work__header {
+  text-align: center;      
+}
+.work_row {
+  display: flex;
+  justify-content: center;
+  gap: 4em;           /* расстояние между блоками */
+  margin-top: 12em;   /* отступ от заголовка вниз */
+  padding: 0 3em;     /* отступы слева и справа */
+}
+
+.info1 {
+  text-align: center;  /* выравнивание по центру */
+  min-width: 200px;    /* минимальная ширина для красоты */
+  font-size: 1.8rem;     /* размер шрифта */
+}
