@@ -42,5 +42,5 @@ Yevheniia P
 Mykhailo V
 Danylo S
 Shvets Y
-Volodymyr Nos
 Illia S
+Oleksandra S
