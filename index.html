@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShinyHouse</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="img/textbackground/style.css">
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -38,6 +39,11 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
+        data-hx-get="index.work.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
         data-hx-get="index.checklist.partial.html"
       ></section>
       <section
@@ -48,12 +54,22 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
+        data-hx-get="index.offers.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
         data-hx-get="index.main-video.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.main-stats.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-blog.partial.html"
       ></section>
     </main>
     <footer

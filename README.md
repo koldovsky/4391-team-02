@@ -34,3 +34,6 @@ Somyk Vitalii
 Volodymyr Sh
 Yevheniia P
 Mykhailo V
+Danylo S
+Shvets Y
+Illia S
