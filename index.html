@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShinyHouse</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
-    <link rel="stylesheet" href="img/textbackground/style.css">
+    <link rel="stylesheet" href="img/textbackground/style.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -14,6 +14,18 @@
   </head>
   <body>
     <header class="header">
+      <!-- Volodymyr Nos  -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-contacts.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-navigation.partial.html"
+      ></section>
+      <!-- end of Volodymyr Nos blocks  -->
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -75,6 +87,11 @@
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.main-blog.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.contacts.partial.html"
       ></section>
     </main>
     <footer
