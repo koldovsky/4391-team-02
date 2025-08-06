@@ -2,7 +2,7 @@
 .work__subtitle {
   font-size: 1.4rem;
   font-weight: 400;
-  color: #DDE5ED;
+  color: #dde5ed;
   margin: 0;
 }
 .work__title {
@@ -20,25 +20,25 @@
   min-height: 75vh;
   display: flex;
   flex-direction: column;
-  align-items: center;     
-  justify-content: flex-start; 
-  padding-top: 3em;       
-  font-family: 'Nunito', sans-serif;
-  color: #DDE5ED;         
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 3em;
+  font-family: "Nunito", sans-serif;
+  color: #dde5ed;
 }
 .work__header {
-  text-align: center;      
+  text-align: center;
 }
-.work_row {
+.work__row {
   display: flex;
   justify-content: center;
-  gap: 4em;           /* расстояние между блоками */
-  margin-top: 12em;   /* отступ от заголовка вниз */
-  padding: 0 3em;     /* отступы слева и справа */
+  gap: 4em; /* расстояние между блоками */
+  margin-top: 12em; /* отступ от заголовка вниз */
+  padding: 0 3em; /* отступы слева и справа */
 }
 
-.info1 {
-  text-align: center;  /* выравнивание по центру */
-  min-width: 200px;    /* минимальная ширина для красоты */
-  font-size: 1.8rem;     /* размер шрифта */
+.info {
+  text-align: center; /* выравнивание по центру */
+  min-width: 200px; /* минимальная ширина для красоты */
+  font-size: 1.8rem; /* размер шрифта */
 }
