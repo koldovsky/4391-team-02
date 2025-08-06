@@ -45,4 +45,5 @@ Shvets Y
 Illia S
 Oleksandra S
 Povstianyi D
-Lohunov H
+Alina T
+Lohunov Hryhorii
