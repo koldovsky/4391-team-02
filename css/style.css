@@ -42,6 +42,7 @@
   text-align: center; /* выравнивание по центру */
   min-width: 200px; /* минимальная ширина для красоты */
   font-size: 1.8rem; /* размер шрифта */
+  color: var(--el-color)
 }
 
 :root {
