@@ -6,9 +6,10 @@
   margin: 0;
 }
 .work__title {
-  font-size: 4.5rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 830;
   margin: 0.5em 0;
+  color: var(--el-color);
 }
 .work {
   background-image: url("../img/textbackground/raw.svg");
@@ -41,4 +42,21 @@
   text-align: center; /* выравнивание по центру */
   min-width: 200px; /* минимальная ширина для красоты */
   font-size: 1.8rem; /* размер шрифта */
+}
+
+:root {
+--lower-text-color: #BFC6D2;
+--lower-subtitle-color: #FAFCFE;
+--el-color: #ffffff;
+}
+
+.work__row__item p span {
+  color: var(--lower-text-color) !important ;
+}
+
+.work__subtitle__low {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--lower-subtitle-color);
+  margin: 0;
 }
