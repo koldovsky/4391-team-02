@@ -11,7 +11,7 @@
   margin: 0.5em 0;
 }
 .work {
-  background-image: url("raw.svg");
+  background-image: url("../img/textbackground/raw.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
