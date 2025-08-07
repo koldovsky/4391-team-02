@@ -40,7 +40,7 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Volodymyr Sh
 - Yevheniia P
 - Mykhailo V
-- Danylo S
+- Danylo Skazin
 - Shvets Y
 - Volodymyr Nos
 - Illia S
@@ -48,3 +48,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Povstianyi D
 - Alina T
 - Lohunov Hryhorii
+- Mykhailo Rudenko
