@@ -1,0 +1,14 @@
+.cleaning-video {
+  .cleaning-video__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--secondary-heading-color);
+  }
+  .cleaning-video__subtitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--primary-heading-color);
+  }
+}
