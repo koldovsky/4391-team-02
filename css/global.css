@@ -3,6 +3,8 @@
 @import url("index.work.css");
 @import url("special-offers.css");
 @import url("index.offers.css");
+@import url("index.video.css");
+@import url("index.stats.css");
 html {
   font-family: "Open Sans", sans-serif;
 }
