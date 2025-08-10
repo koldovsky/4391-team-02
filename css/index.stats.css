@@ -2,4 +2,12 @@
     .cleaning-stats__list {
         background-color: var(--accent-background-color);
     }
+    .cleaning-stats__number {
+        font-size: 3 rem;
+        color: var(--secondady-heading-color);
+    }
+    .cleaning-stats__description {
+        font-size: 3 rem;
+        color: var(--tertiary-heading-color);
+    }
 }
