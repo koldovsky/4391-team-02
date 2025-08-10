@@ -3,11 +3,11 @@
         background-color: var(--accent-background-color);
     }
     .cleaning-stats__number {
-        font-size: 3 rem;
+        font-size: 10 rem;
         color: white;
     }
     .cleaning-stats__description {
         font-size: 3 rem;
-        color: var(--tertiary-heading-color);
+        color: var(--primary-paragraph-color);
     }
 }
