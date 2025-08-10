@@ -1,9 +1,10 @@
 /* Danylo Skazin */
 .offers {
-  .offers__title-container {.offers__main-title{    
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--tertiary-text-color);
-  }
+  .offers__title-container {
+    .offers__main-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--tertiary-text-color);
+    }
   }
 }
