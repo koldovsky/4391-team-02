@@ -1,74 +1,130 @@
 <section class="contacts" id="contacts">
   <div class="contacts__main">
-    <p class="contacts__eyebrow">Contacts</p>
-    <h2 class="contacts__title">Contact Us</h2>
+    <p class="contacts__eyebrow">
+      <span class="w-text-block" style="display: block">
+        <span
+          class="contacts__eyebrow"
+          style="color: var(--ui-dark-shade-color)"
+          >CONTACTS</span
+        ></span
+      >
+    </p>
+    <h2 class="contacts__title">
+      <span class="contacts__title contactus" style="color: #316ccd"
+        >Contact Us</span
+      >
+    </h2>
     <p class="contacts__description">
       Feel free to contact us in any convenient way.
     </p>
   </div>
-
-
   <div class="contacts__layout">
-    <div class="contacts__item contacts__item--adress">
-      <span class="contacts__icon" aria-hidden="true">
-        <!-- pin icon -->
-        <svg width="40" viewBox="0 0 48 48" class="contacts__icon-svg" focusable="false">
-          <path
-            d="M24 48c-.3 0-.6-.1-.8-.4C22.5 46.7 6.8 26.3 6.8 17.2 6.8 7.7 14.5 0 24 0s17.2 7.7 17.2 17.2c0 9.1-15.7 29.5-16.4 30.4-.2.3-.5.4-.8.4zM24 2C15.6 2 8.8 8.8 8.8 17.2c0 7.4 12 23.8 15.2 28.1 3.2-4.3 15.2-20.8 15.2-28.1C39.2 8.8 32.4 2 24 2z" />
-          <path
-            d="M24 26.3c-5 0-9.1-4.1-9.1-9.1S19 8.1 24 8.1s9.1 4.1 9.1 9.1-4.1 9.1-9.1 9.1zm0-16.2c-3.9 0-7.1 3.2-7.1 7.1s3.2 7.1 7.1 7.1 7.1-3.2 7.1-7.1-3.2-7.1-7.1-7.1z" />
-        </svg>
-      </span>
-      <h3 class="contacts__item-title">Address</h3>
-      <address class="contacts__text">
-        37 W 26th St #410, New York, NY 10010, USA
-      </address>
-      <address class="contacts__text">
-        205 W Randolph St Ste 900, Chicago, IL 60606, USA
-      </address>
+    <div>
+      <ul>
+        <div class="contacts__item contacts__item--adress">
+          <span class="contacts__icon" aria-hidden="true">
+            <div
+              class="contacts__icon"
+              style="
+                width: 70px;
+                height: 70px;
+                background: #fcd700;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            > 
+              <!-- pin icon -->
+              <svg
+                width="40"
+                viewBox="0 0 48 48"
+                class="contacts__icon-svg"
+                focusable="false"
+              >
+                <path
+                  d="M24 48c-.3 0-.6-.1-.8-.4C22.5 46.7 6.8 26.3 6.8 17.2 6.8 7.7 14.5 0 24 0s17.2 7.7 17.2 17.2c0 9.1-15.7 29.5-16.4 30.4-.2.3-.5.4-.8.4zM24 2C15.6 2 8.8 8.8 8.8 17.2c0 7.4 12 23.8 15.2 28.1 3.2-4.3 15.2-20.8 15.2-28.1C39.2 8.8 32.4 2 24 2z"
+                />
+                <path
+                  d="M24 26.3c-5 0-9.1-4.1-9.1-9.1S19 8.1 24 8.1s9.1 4.1 9.1 9.1-4.1 9.1-9.1 9.1zm0-16.2c-3.9 0-7.1 3.2-7.1 7.1s3.2 7.1 7.1 7.1 7.1-3.2 7.1-7.1-3.2-7.1-7.1-7.1z"
+                />
+              </svg>
+            </div>
+          </span>
+          <h3 class="contacts__item-title">Address</h3>
+          <address class="contacts__text">
+            37 W 26th St #410, New York, NY 10010, USA
+          </address>
+          <address class="contacts__text">
+            205 W Randolph St Ste 900, Chicago, IL 60606, USA
+          </address>
+        </div>
+
+        <div class="contacts__item contacts__item--phone">
+          <span class="contacts__icon" aria-hidden="true">
+            <!-- phone icon -->
+            <svg
+              width="40"
+              viewBox="0 0 120 120"
+              class="contacts__icon-svg"
+              focusable="false"
+            >
+              <path
+                d="M79.96 66.885c-5.265-8.765-16.238-11.878-24.469-6.935-2.134 1.282-3.914 3.015-5.273 5.079-5.766-7.298-10.434-15.994-13.229-22.503 2.579-.188 5.058-.966 7.294-2.309 8.224-4.94 10.632-16.092 5.368-24.859C44.385 6.593 33.408 3.482 25.184 8.423c-5.527 3.32-8.38 9.604-7.877 17.068.049.681.116 1.368.221 2.067 1.531 9.5 8.627 42.237 35.572 60.965 1.415 1.224 3 2.22 4.68 2.984 2.407.967 4.967 1.48 7.473 1.48 2.995 0 5.905-.712 8.354-2.183 9.156-5.921 11.564-17.074 6.299-25.839z"
+              />
+            </svg>
+          </span>
+          <h3 class="contacts__item-title">Phone</h3>
+          <p class="contacts__text">
+            <a class="contacts__link" href="tel:+12345678900"
+              >+1 (234) 567 89 00</a
+            >
+          </p>
+          <p class="contacts__text">
+            <a class="contacts__link" href="tel:+12345678901"
+              >+1 (234) 567 89 01</a
+            >
+          </p>
+        </div>
+        <div class="contacts__item contacts__item--email">
+          <span class="contacts__icon" aria-hidden="true">
+            <!-- mail icon -->
+            <svg
+              width="40"
+              viewBox="0 0 100 100"
+              class="contacts__icon-svg"
+              focusable="false"
+            >
+              <path
+                d="M93 23H7a2 2 0 0 0-2 2v50a2 2 0 0 0 2 2h86a2 2 0 0 0 2-2V25a2 2 0 0 0-2-2zm-84 5.8L39.3 50 9 71.2V28.8zM50 52.6 13.4 27h73.3L50 52.6zM42.8 52.4l6 4.2c.3.2.7.4 1.1.4s.8-.1 1.1-.4l6-4.2L86.6 73H13.4L42.8 52.4zM60.7 50 91 28.8v42.3L60.7 50z"
+              />
+            </svg>
+          </span>
+          <h3 class="contacts__item-title">E‑mail</h3>
+          <p class="contacts__text">
+            <a class="contacts__link" href="mailto:hr-shinyhouse@email.com"
+              >hr-shinyhouse@email.com</a
+            >
+          </p>
+          <p class="contacts__text">
+            <a class="contacts__link" href="mailto:shinyhouse@email.com"
+              >shinyhouse@email.com</a
+            >
+          </p>
+        </div>
+      </ul>
     </div>
-
-
-    <div class="contacts__item contacts__item--phone">
-      <span class="contacts__icon" aria-hidden="true">
-        <!-- phone icon -->
-        <svg width="40" viewBox="0 0 120 120" class="contacts__icon-svg" focusable="false">
-          <path
-            d="M79.96 66.885c-5.265-8.765-16.238-11.878-24.469-6.935-2.134 1.282-3.914 3.015-5.273 5.079-5.766-7.298-10.434-15.994-13.229-22.503 2.579-.188 5.058-.966 7.294-2.309 8.224-4.94 10.632-16.092 5.368-24.859C44.385 6.593 33.408 3.482 25.184 8.423c-5.527 3.32-8.38 9.604-7.877 17.068.049.681.116 1.368.221 2.067 1.531 9.5 8.627 42.237 35.572 60.965 1.415 1.224 3 2.22 4.68 2.984 2.407.967 4.967 1.48 7.473 1.48 2.995 0 5.905-.712 8.354-2.183 9.156-5.921 11.564-17.074 6.299-25.839z" />
-        </svg>
-      </span>
-      <h3 class="contacts__item-title">Phone</h3>
-      <p class="contacts__text">
-        <a class="contacts__link" href="tel:+12345678900">+1 (234) 567 89 00</a>
-      </p>
-      <p class="contacts__text">
-        <a class="contacts__link" href="tel:+12345678901">+1 (234) 567 89 01</a>
-      </p>
-    </div>
-
-
-    <div class="contacts__item contacts__item--email">
-      <span class="contacts__icon" aria-hidden="true">
-        <!-- mail icon -->
-        <svg width="40" viewBox="0 0 100 100" class="contacts__icon-svg" focusable="false">
-          <path
-            d="M93 23H7a2 2 0 0 0-2 2v50a2 2 0 0 0 2 2h86a2 2 0 0 0 2-2V25a2 2 0 0 0-2-2zm-84 5.8L39.3 50 9 71.2V28.8zM50 52.6 13.4 27h73.3L50 52.6zM42.8 52.4l6 4.2c.3.2.7.4 1.1.4s.8-.1 1.1-.4l6-4.2L86.6 73H13.4L42.8 52.4zM60.7 50 91 28.8v42.3L60.7 50z" />
-        </svg>
-      </span>
-      <h3 class="contacts__item-title">E‑mail</h3>
-      <p class="contacts__text">
-        <a class="contacts__link" href="mailto:hr-shinyhouse@email.com">hr-shinyhouse@email.com</a>
-      </p>
-      <p class="contacts__text">
-        <a class="contacts__link" href="mailto:shinyhouse@email.com">shinyhouse@email.com</a>
-      </p>
-    </div>
-
     <div class="contacts__map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.3062031171307!2d-74.04707532348299!3d40.689253439007096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue%20of%20Liberty!5e0!3m2!1sru!2sde!4v1754660363216!5m2!1sru!2sde"
-        width="600" title="ShinyHouse location on map" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        width="600"
+        title="ShinyHouse location on map"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
   </div>
 </section>
