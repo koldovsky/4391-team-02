@@ -1,7 +1,5 @@
 .cleaning-stats {
   .cleaning-stats__list {
-    display: inline-flex;
-    justify-content: space-evenly;
     background-color: var(--accent-background-color);
   }
   .cleaning-stats__number {
