@@ -1,3 +1,5 @@
 .cleaning-stats {
-    background-color: var(--accent-background-color);
+    .cleaning-stats__list {
+        background-color: var(--accent-background-color);
+    }
 }
