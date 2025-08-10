@@ -4,7 +4,17 @@
     .offers__main-title {
       font-size: 14px;
       font-weight: 700;
-      color: var(--tertiary-text-color);
+      color: var(--tertiary-heading-color);
+    }
+    .offers__subtitle {
+      font-size: 50px;
+      font-weight: 700;
+      color: var(--primary-heading-color);
+    }
+    .offers__description {
+      font-size: 19px;
+      font-weight: 500;
+      color: var(--primary-paragraph-color);
     }
   }
 }
