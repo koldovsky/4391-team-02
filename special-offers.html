@@ -13,6 +13,10 @@
       href="#"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="css/global.css"
+    />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -21,7 +25,6 @@
   </head>
   <body>
     <header class="header">
-      <!-- Volodymyr Nos  -->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -32,138 +35,14 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.header-navigation.partial.html"
       ></section>
-      <!-- end of Volodymyr Nos blocks  -->
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></nav>
     </header>
 
-    <main class="special-offers">
-      <h1 class="special-offers__title">Special Offers</h1>
-
-      <div class="special-offer">
-        <div class="special-offer__header">
-          <div class="special-offer__titles">
-            <h2 class="special-offer__title">Save 40% on Carpet Cleaning!</h2>
-            <p class="special-offer__subtitle">
-              Book any of our services till the end of November and get an extra
-              40% off on carpet/upholstery cleaning!
-            </p>
-          </div>
-          <img
-            class="special-offer__image"
-            src="img/offers/offer-carpet-cleaning.webp"
-            alt="banner image"
-          />
-        </div>
-
-        <p class="special-offer__description">
-          It’s the perfect time to treat your home to a deep clean. Just leave
-          your contact info below — we’ll get in touch and help you schedule
-          your discounted cleaning in no time!
-        </p>
-        <a href="#special-offer-form">Contact Us →</a>
-      </div>
-
-      <div class="special-offer">
-        <div class="special-offer__header">
-          <div class="special-offer__titles">
-            <h2 class="special-offer__title">
-              25% Discount on All Services for Seniors
-            </h2>
-            <p class="special-offer__subtitle">
-              We offer a 25% discount for seniors on Monday through Wednesday
-              all the year round. Enjoy this great deal!
-            </p>
-          </div>
-          <img
-            class="special-offer__image"
-            src="img/offers/offer-discount-for-seniors.webp"
-            alt="banner image"
-          />
-        </div>
-
-        <p class="special-offer__description">
-          Because you deserve care and comfort. Our professional team is here to
-          make your home cleaner and your life easier — at a price that respects
-          your budget. Simply show proof of age when booking, and we’ll handle
-          the rest!
-        </p>
-        <a href="#special-offer-form">Contact Us →</a>
-      </div>
-
-      <div class="special-offer">
-        <div class="special-offer__header">
-          <div class="special-offer__titles">
-            <h2 class="special-offer__title">We Welcome New Clients!</h2>
-            <p class="special-offer__subtitle">
-              Receive $50 off your first residential or commercial cleaning
-              service and get benefit from this great deal!
-            </p>
-          </div>
-          <img
-            class="special-offer__image"
-            src="img/offers/offer-new-clients.webp"
-            alt="banner image"
-          />
-        </div>
-
-        <p class="special-offer__description">
-          Let’s make your first experience unforgettable. Whether it’s your home
-          or office, our expert cleaners are ready to deliver top-quality
-          service. Book today and enjoy your $50 welcome discount — it’s that
-          simple!
-        </p>
-        <a href="#special-offer-form">Contact Us →</a>
-      </div>
-
-      <div class="special-offer">
-        <div class="special-offer__header">
-          <div class="special-offer__titles">
-            <h2 class="special-offer__title">
-              25% Discount on Kitchen Cleaning
-            </h2>
-            <p class="special-offer__subtitle">
-              Have you had a party recently? We offer special prices on kitchen
-              cleaning till the end of 2022.
-            </p>
-          </div>
-          <img
-            class="special-offer__image"
-            src="img/offers/offer-kitchen-cleaning.webp"
-            alt="banner image"
-          />
-        </div>
-
-        <p class="special-offer__description">
-          We'll handle the mess — so you can relax. From countertops to
-          appliances, our team will leave your kitchen spotless and fresh. Don’t
-          miss this limited-time offer — book your discounted cleaning today!
-        </p>
-        <a href="#special-offer-form">Contact Us →</a>
-      </div>
-
-      <form
-        id="special-offer-form"
-        class="special-offer__form"
-      >
-        <h3 class="special-offer__form-title">Contact Us</h3>
-        <input
-          type="text"
-          placeholder="Name"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-        />
-        <input
-          type="tel"
-          placeholder="Phone"
-        />
-        <button type="submit">Submit</button>
-      </form>
+    <main>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="special-offers.main.partial.html"
+      ></section>
     </main>
 
     <footer
