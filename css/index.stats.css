@@ -8,6 +8,6 @@
     }
     .cleaning-stats__description {
         font-size: 3 rem;
-        color: var(--primary-paragraph-color);
+        color: #d3d3d3;
     }
 }
