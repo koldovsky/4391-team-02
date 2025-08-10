@@ -1,8 +1,6 @@
 .cleaning-stats {
   .cleaning-stats__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline;
     background-color: var(--accent-background-color);
   }
   .cleaning-stats__number {
