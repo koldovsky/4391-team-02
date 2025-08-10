@@ -4,7 +4,7 @@
     }
     .cleaning-stats__number {
         font-size: 3 rem;
-        color: var(--secondady-heading-color);
+        color: white;
     }
     .cleaning-stats__description {
         font-size: 3 rem;
