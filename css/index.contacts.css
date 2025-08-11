@@ -3,15 +3,18 @@
   flex-direction: column;
   gap: 20px;
 }
+
 .contacts__main {
   padding: 90px 30px;
 }
+
 .contacts__map iframe {
   width: 100%;
   height: 400px;
   border: 0;
   display: block;
 }
+
 @media (min-width: 600px) {
   .contacts__main {
     padding: 105px 60px;
@@ -19,13 +22,17 @@
     flex-direction: column;
     gap: 6px;
   }
+
   .contacts__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* ліворуч контент, праворуч карта */
+    grid-template-columns: 1fr 1fr;
+    /* ліворуч контент, праворуч карта */
     gap: 0px;
-    align-items: stretch; /* розтягнути обидва стовпці по висоті */
+    align-items: stretch;
+    /* розтягнути обидва стовпці по висоті */
   }
 }
+
 .contacts__icon {
   width: 50px;
   height: 50px;
@@ -38,10 +45,12 @@
   margin-right: 10px;
   flex: 0 0 50px;
 }
+
 .contacts {
   background-color: #fff;
   padding: 60px 30px;
 }
+
 .contacts__eyebrow {
   font-size: 14px;
   font-weight: 700;
@@ -51,12 +60,14 @@
   margin-left: 0px;
   letter-spacing: 1.4px;
 }
+
 .contacts__title {
   font-size: 38px;
   font-weight: 700;
   color: #316ccd;
   margin-bottom: 18px;
 }
+
 .contacts__description {
   font-size: 19px;
   font-weight: 500;
@@ -64,6 +75,7 @@
   filter: contrast(3.75);
   margin-bottom: 36px;
 }
+
 .contacts__list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -72,35 +84,45 @@
   padding: 0px;
   gap: 20px;
 }
+
 .contacts__item {
   display: flex;
   align-items: flex-start;
   margin-bottom: 20px;
 }
+
 .contacts__text {
   font-style: normal;
   color: #848484;
   font-size: 17px;
   font-weight: ;
 }
+
 .contacts__icon-svg {
   width: 26px;
   height: 26px;
   display: block;
   color: #3c3c3c;
 }
+
 .contacts__map {
   margin: 0;
   padding: 0;
 }
+
 .contacts__map iframe {
-  height: 100%; /* для мобильных */
+  height: 100%;
+  /* для мобильных */
 }
+
 .contacts__link {
-  color: #848484; /* твой серый цвет */
-  text-decoration: none; /* убираем стандартное подчеркивание */
+  color: #848484;
+  /* твой серый цвет */
+  text-decoration: none;
+  /* убираем стандартное подчеркивание */
 }
 
 .contacts__link:hover {
-  text-decoration: underline; /* добавляем подчеркивание при наведении */
+  text-decoration: underline;
+  /* добавляем подчеркивание при наведении */
 }
