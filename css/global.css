@@ -6,6 +6,7 @@
 @import url("index.video.css");
 @import url("index.stats.css");
 @import url("index.contacts.css");
+@import url("index.footer.css");
 html {
   font-family: "Open Sans", sans-serif;
 }
@@ -25,6 +26,7 @@ html {
 
   --primary-paragraph-color: #848484;
   --accent-paragraph-color: #90c43f;
+  --footer-paragraph-color: rgb(211, 211, 211);
 
   --primary-button-color: #fcd700;
   --secondary-button-color: #316ccd;
