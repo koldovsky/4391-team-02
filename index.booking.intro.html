@@ -1,20 +1,41 @@
 <section class="booking-intro-section">
+  <link rel="stylesheet" href="/css/global.css" />
   <style>
     .booking-intro-section {
       position: relative;
       display: flex;
       align-items: center;
       min-height: 80vh;
-      color: #1a1a1a;
+      color: var(--tertiary-heading-color);
       overflow: hidden;
       padding: 80px 0;
     }
 
-    /*Background image for desktop*/
+    /* Background image for PC*/
     @media (min-width: 768px) {
       .booking-intro-section {
-        background: no-repeat 49.06% 100% / cover, #f4f4f4;
+        background: no-repeat 49.06% 100% / cover,
+          var(--secondary-background-color);
         background-image: url("img/booking-intro/booking-intro-bg-desktop.png");
+      }
+    }
+
+    /* Styles for phones */
+    @media (max-width: 767px) {
+      .booking-intro-section {
+        min-height: auto;
+        padding-bottom: 50px;
+        background: no-repeat 14.69% 48.84% / cover,
+          var(--secondary-background-color);
+        background-image: url("img/booking-intro/booking-intro-bg-desktop.png");
+      }
+      .booking-intro__header,
+      .booking-intro__footer {
+        max-width: 100%;
+        text-align: center;
+      }
+      .booking-intro__actions {
+        justify-content: center;
       }
     }
 
@@ -28,7 +49,15 @@
       width: 100%;
     }
 
-    /* Desktop Styles */
+    .booking-intro__header {
+      margin-bottom: 30px;
+    }
+
+    .booking-intro__footer {
+      max-width: 450px;
+    }
+
+    /* PC Styles */
     @media (min-width: 1200px) {
       .booking-intro__header,
       .booking-intro__footer {
@@ -39,15 +68,16 @@
     .booking-intro__subheading {
       font-size: 16px;
       font-weight: 500;
-      color: #7a7a7a;
+      color: var(--primary-paragraph-color);
       margin-bottom: 10px;
+      text-transform: uppercase;
     }
 
     .booking-intro__title {
       font-size: 60px;
       font-weight: 700;
       line-height: 1.1;
-      color: #316ccd;
+      color: var(--primary-heading-color);
       margin-bottom: 0;
     }
 
@@ -59,6 +89,7 @@
       font-size: 18px;
       line-height: 1.5;
       margin-bottom: 30px;
+      color: var(--primary-paragraph-color);
     }
 
     .booking-intro__actions {
@@ -69,8 +100,8 @@
     }
 
     .booking-intro__button {
-      padding: 15px 30px;
-      border-radius: 50px;
+      padding: 15px 40px;
+      border-radius: 10px;
       font-size: 18px;
       font-weight: 600;
       text-decoration: none;
@@ -78,17 +109,18 @@
     }
 
     .booking-intro__button--primary {
-      background-color: #fce712;
-      color: #0a0a0a;
+      background-color: var(--primary-button-color);
+      color: var(--tertiary-heading-color);
     }
 
     .booking-intro__button--primary:hover {
-      background-color: #f7d200;
+      background-color: var(--footer-background-color);
+      color: var(--secondary-heading-color);
     }
 
     .booking-intro__button--link {
       background-color: transparent;
-      color: #316ccd;
+      color: var(--secondary-button-color);
       display: flex;
       align-items: center;
       padding: 15px 0;
@@ -115,14 +147,14 @@
         Take some rest and leave all your home or office dirt and mess to
         cleaning professionals!
       </p>
+      <!-- modal window -->
       <div class="booking-intro__actions">
         <a
           href="#"
           class="booking-intro__button booking-intro__button--primary"
         >
-          <!-- Need Js for modal window -->
-          Book Now</a
-        >
+          Book Now
+        </a>
         <a
           href="tel:+12345678900"
           class="booking-intro__button booking-intro__button--link"
