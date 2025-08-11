@@ -11,4 +11,10 @@
     font-weight: 700;
     color: var(--primary-heading-color);
   }
+  .cleaning-video__embed {
+      iframe {
+         width: 100%;
+         aspect-ratio: 16/9;
+      }
+  }
 }
