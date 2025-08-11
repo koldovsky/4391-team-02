@@ -1,1 +1,8 @@
-@import "global.css";
+@import url("global.css");
+@import url("index.work.css");
+@import url("special-offers.css");
+@import url("index.offers.css");
+@import url("index.video.css");
+@import url("index.stats.css");
+@import url("index.contacts.css");
+@import url("index.footer.css");
