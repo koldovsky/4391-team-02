@@ -1,4 +1,5 @@
 /* Illia Stefanov */
+
 .work__subtitle {
   font-size: 1.4rem;
   font-weight: 400;
@@ -9,7 +10,7 @@
   font-size: 3rem;
   font-weight: 830;
   margin: 0.5em 0;
-  color: var(--el-color);
+  color: var(--lower-subtitle-work-color);
 }
 .work {
   background-image: url("../img/textbackground/raw.svg");
@@ -42,22 +43,16 @@
   text-align: center; /* выравнивание по центру */
   min-width: 200px; /* минимальная ширина для красоты */
   font-size: 1.8rem; /* размер шрифта */
-  color: var(--el-color)
-}
-
-:root {
---lower-text-color: #BFC6D2;
---lower-subtitle-color: #FAFCFE;
---el-color: #ffffff;
+  color: var(--primary-background-color);
 }
 
 .work__row__item p span {
-  color: var(--lower-text-color) !important ;
+  color: var(--lower-text-work-color) !important ;
 }
 
 .work__subtitle__low {
   font-size: 1.4rem;
   font-weight: 400;
-  color: var(--lower-subtitle-color);
+  color: var(--lower-subtitle-work-color);
   margin: 0;
 }
