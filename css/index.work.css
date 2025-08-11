@@ -1,58 +1,93 @@
 /* Illia Stefanov */
+.work {
+  background: url("../img/textbackground/raw.svg") center/cover no-repeat fixed;
+  padding: 2em 1em;
+  font-family: "Nunito", sans-serif;
+  color: #dde5ed;
+  text-align: center;
+}
 
 .work__subtitle {
-  font-size: 1.4rem;
-  font-weight: 400;
+  font-size: 1.2rem;
   color: #dde5ed;
   margin: 0;
 }
+
 .work__title {
-  font-size: 3rem;
-  font-weight: 830;
+  font-size: 2rem;
+  font-weight: 800;
   margin: 0.5em 0;
   color: var(--lower-subtitle-work-color);
 }
-.work {
-  background-image: url("../img/textbackground/raw.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100vw;
-  min-height: 75vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 3em;
-  font-family: "Nunito", sans-serif;
-  color: #dde5ed;
+
+.work__subtitle__low {
+  font-size: 1.2rem;
+  color: var(--lower-subtitle-work-color);
+  margin: 0;
 }
-.work__header {
-  text-align: center;
-}
+
 .work__row {
   display: flex;
-  justify-content: center;
-  gap: 4em; /* расстояние между блоками */
-  margin-top: 12em; /* отступ от заголовка вниз */
-  padding: 0 3em; /* отступы слева и справа */
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
 }
 
 .work__row__item {
-  text-align: center; /* выравнивание по центру */
-  min-width: 200px; /* минимальная ширина для красоты */
-  font-size: 1.8rem; /* размер шрифта */
-  color: var(--primary-background-color);
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-.work__row__item p span {
-  color: var(--lower-text-work-color) !important ;
+.work__row__item strong {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  padding-bottom: 0.5em;
+  position: relative;
 }
 
-.work__subtitle__low {
-  font-size: 1.4rem;
-  font-weight: 400;
-  color: var(--lower-subtitle-work-color);
-  margin: 0;
+.work__row__item strong::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: var(--lower-subtitle-work-color);
+  margin: 0.5em auto 0;
+}
+
+.work__row__item p {
+  font-size: 1rem;
+  color: var(--lower-text-work-color);
+  line-height: 1.4;
+  margin-top: 0.5em;
+}
+
+/* Десктоп */
+@media (min-width: 768px) {
+  .work__title {
+    font-size: 3rem;
+  }
+
+  .work__subtitle,
+  .work__subtitle__low {
+    font-size: 1.4rem;
+  }
+
+  .work__row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4em;
+    max-width: 1200px;
+    margin: 3em auto 0;
+  }
+
+  .work__row__item {
+    max-width: 250px;
+  }
+
+  .work__row__item strong {
+    font-size: 1.4rem;
+  }
 }
