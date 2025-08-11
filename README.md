@@ -34,15 +34,18 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 ```
 
 # Team
-Oleksandr R
-Stefania K
-Somyk Vitalii
-Volodymyr Sh
-Yevheniia P
-Mykhailo V
-Danylo S
-Shvets Y
-Illia S
-Oleksandra S
-Povstianyi D
-Alina T
+- Oleksandr R
+- Stefania K
+- Somyk Vitalii
+- Volodymyr Sh
+- Yevheniia P
+- Mykhailo V
+- Danylo Skazin
+- Shvets Y
+- Volodymyr Nos
+- Illia S
+- Oleksandra S
+- Povstianyi D
+- Alina T
+- Lohunov Hryhorii
+- Mykhailo Rudenko

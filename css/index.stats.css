@@ -1,0 +1,17 @@
+.cleaning-stats {
+  .cleaning-stats__list {
+    background-color: var(--accent-background-color);
+  }
+  .cleaning-stats__number {
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--secondary-heading-color);
+  }
+  .cleaning-stats__description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #d3d3d3;
+  }
+}

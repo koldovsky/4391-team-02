@@ -1,46 +1,70 @@
 <!--Oleksandra Stadnyk-->
-<section class="testimonials">
-    <div class="testimonials">
-        <h2 class="testimonials">Testimonials</h2>
-        <p class="testimonials">Our Clients Say</p>
-        <p class="testimonials">We are happy to make your homes and offices cleaner.</p>
+<section class="testimonials" aria-labelledby="testimonials-title">
+  <div class="testimonials-container">
+    <header class="testimonials__header">
+      <h2 class="testimonials__title" id="testimonials-title">
+        Testimonials
+      </h2>
+      <p class="testimonials-container__subtitle">Our Clients Say</p>
+      <p class="testimonials-container__description">
+        We are happy to make your homes and offices cleaner.
+      </p>
+    </header>
 
-        <div class="testimonials-carousel">
-            <div class="testimonials-carousel__track-container">
-                <ul class="testimonials-carousel__track">
+    <div class="testimonials-carousel" role="region" aria-label="Testimonials carousel">
+      <div class="testimonials__track-container">
+        <ul class="testimonials__track">
 
-                    <li class="testimonials-carousel__slide">
-                        <img src="img/testimonials/testimonials-jesse-v.webp" alt="Jesse V., Chicago" class="testimonials-carousel__image" width="96" height="96">
-                        <h3 class="testimonials-carousel__name"><span>Jesse V., Chicago</span></h3>
-                        <blockquote class="testimonials-carousel__quote">
-                            "When our company of 500 employees just moved into a brand new office in a different
-                            part of the city, we had no one to help us with the cleaning. Luckily, we were referred to
-                            these guys. It is amazing that 5 guys can clean a 5,000 ft<sup>2</sup> premise so well and fast."
-                        </blockquote>
-                        <time class="testimonials-carousel__date" datetime="2024-12-15"><span>December 15, 2024</span></time>
-                    </li>
-                    
-                    <li class="testimonials-carousel__slide">
-                        <img src="img/testimonials/testimonials-jimmy-c.webp" alt="Jimmy C., NYC" class="testimonials-carousel__image" width="96" height="96">
-                        <h3 class="testimonials-carousel__name"><span>Jimmy C., NYC</span></h3>
-                        <blockquote class="testimonials-carousel__quote">
-                            "My home looks excellent, very professional service from start to finish! I`m
-                            completely satisfied with the cleaning and just in love with your cleaning crew.
-                            They were attentive to every detail. I have no words to describe how pleased I am."
-                        </blockquote>
-                        <time class="testimonials-carousel__date" datetime="2024-05-25"><span>May 25, 2024</span></time>
-                    </li>
+          <li class="testimonials__slide">
+            <figure class="testimonials__item">
+              <img src="img/testimonials/testimonials-jesse-v.webp" alt="Jesse V., Chicago" class="testimonials__image" width="96" height="96"/>
+              <figcaption class="testimonials__caption">
+                <h3 class="testimonials__name">
+                <span>Jesse V., Chicago</span>
+                </h3>
+                <blockquote class="testimonials__quote">
+                  "When our company of 500 employees just moved into a brand new
+                  office in a different part of the city, we had no one to help
+                  us with the cleaning. Luckily, we were referred to these guys.
+                  It is amazing that 5 guys can clean a 5,000 ft<sup>2</sup>
+                  premise so well and fast."
+                </blockquote>
+                <time class="testimonials__date" datetime="2024-12-15"
+                  ><span>December 15, 2024</span></time
+                >
+              </figcaption>
+            </figure>
+          </li>
 
-                </ul>
-            </div>
+          <li class="testimonials__slide">
+            <figure class="testimonials__item">
+              <img
+                src="img/testimonials/testimonials-jimmy-c.webp" alt="Jimmy C., NYC" class="testimonials__image" width="96" height="96"/>
+              <figcaption class="testimonials__caption">
+                <h3 class="testimonials__name">
+                <span>Jimmy C., NYC</span>
+                </h3>
+                <blockquote class="testimonials__quote">
+                  "My home looks excellent, very professional service from start
+                  to finish! I`m completely satisfied with the cleaning and just
+                  in love with your cleaning crew. They were attentive to every
+                  detail. I have no words to describe how pleased I am."
+                </blockquote>
+                <time class="testimonials__date" datetime="2024-05-25"
+                  ><span>May 25, 2024</span></time
+                >
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
 
-            <button class="testimonials-carousel__button testimonials-carousel__button--left" type="button" aria-label="Previous slide"></button>
-            <button class="testimonials-carousel__button testimonials-carousel__button--right" type="button" aria-label="Next slide"></button>
-            <div class="testimonials-carousel__nav">
-                <button class="testimonials-carousel__indicator testimonials-carousel__indicator--active" type="button" data-slide-to="0"></button>
-                <button class="testimonials-carousel__indicator" type="button" data-slide-to="1"></button>
-
-            </div>
-        </div>
+      <button class="testimonials__button testimonials__button--prev" type="button" aria-label="Previous testimonial"></button>
+      <button class="testimonials__button testimonials__button--next" type="button" aria-label="Next testimonial"></button>
+      <div class="testimonials__indicators">
+        <button class="testimonials__indicator testimonials__indicator--active" type="button" aria-label="View testimonial 1" data-slide-to="0"></button>
+        <button class="testimonials__indicator" type="button" aria-label="View testimonial 2" data-slide-to="1"></button>
+      </div>
     </div>
+  </div>
 </section>
