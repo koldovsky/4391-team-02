@@ -3,6 +3,9 @@
   flex-direction: column;
   gap: 20px;
 }
+.contacts__main {
+  background: rgb(244, 244, 244);
+}
 
 .contacts__main {
   padding: 90px 30px;
