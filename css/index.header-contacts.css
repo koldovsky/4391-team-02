@@ -1,0 +1,14 @@
+.contacts {
+    background-color: var(--secondary-background-color);
+    color: var(--accent-paragraph-color);
+    text-align: center;
+}
+
+.contacts_mail{
+    text-align: left;
+    color: var(--accent-paragraph-color);
+}
+
+.contacts_phone{
+    text-align: right;
+}
