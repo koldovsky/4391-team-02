@@ -15,6 +15,7 @@
   --tertiary-heading-color: #3c3c3c;
 
   --primary-paragraph-color: #848484;
+  --secondary-paragraph-color: #B4B4B4;
   --accent-paragraph-color: #90c43f;
   --footer-paragraph-color: rgb(211, 211, 211);
 
@@ -28,6 +29,7 @@
 
   --primary-link-color: #ffffff;
   --secondary-link-color: #1e61f9;
+  --tertiary-link-color: #676A73;
 
   --lower-text-work-color: #bfc6d2;
   --lower-subtitle-work-color: #fafcfe;
