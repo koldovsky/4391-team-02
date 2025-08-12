@@ -63,10 +63,11 @@
     font-size: 15px;
     font-weight: 700;
     margin-top: 20px;
-}
+    color: var(--secondary-paragraph-color);
 
-.services__card-price span{
-    color: var(--accent-paragraph-color);
+    span {
+        color: var(--accent-paragraph-color);
+    }
 }
 
 .services__card-description {
