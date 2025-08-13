@@ -67,72 +67,6 @@
     }
   }
 
-  /*  @media (min-width: 768px) {
-    
-    .footer {
-     
-      
-      .footer__top {
-       
-
-        .footer__logo-link {
-          
-
-          .footer__logo {
-            
-          }
-        }
-
-        .footer__contact {
-          
-        }
-
-        .footer__social-icons {
-          
-          .footer__icons-link {
-
-            .footer__icon {
-              
-              .footer__icons-outer {
-                
-              }
-              .footer__icons-border {
-                
-              }
-              .footer__icons-logo {
-                
-              }
-            }
-
-            .footer__icon:hover {
-              
-            }
-          }
-        }
-      }
-
-      .footer__nav {
-        
-
-        .footer__list {
-          
-        }
-      }
-
-      .footer__subscribe {
-        
-
-        .footer__form {
-          
-        }
-      }
-
-      .footer__lines {
-        
-      }
-    }
-  }  */
-
   .footer__description {
     color: var(--footer-paragraph-color);
     font-size: 17px;
@@ -252,5 +186,57 @@
     flex-direction: column;
     color: var(--footer-paragraph-color);
     font-size: 14px;
+  }
+
+  @media (min-width: 768px) {
+    .footer__container {
+      padding-top: 50px;
+      padding-bottom: 15px;
+      padding-right: 15px;
+      padding-left: 15px;
+      display: flex;
+      flex-direction: row;
+
+      .footer__top {
+        width: 20%;
+
+        .footer__logo-link {
+          .footer__logo {
+            padding-top: 30px;
+            width: 90%;
+          }
+        }
+
+        .footer__social-icons {
+          flex-wrap: wrap;
+        }
+      }
+
+      .footer__nav {
+        flex-direction: row;
+        align-items: normal;
+        width: 60%;
+        .footer__list {
+          width: 33.33%;
+        }
+      }
+
+      .footer__subscribe {
+        width: 20%;
+        .footer__subscribe-text {
+          text-align: center;
+        }
+      }
+    }
+
+    .footer__description {
+      width: 90%;
+    }
+
+    .footer__rights {
+      padding: 20px;
+      justify-content: space-between;
+      flex-direction: row;
+    }
   }
 }
