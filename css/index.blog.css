@@ -1,15 +1,17 @@
-.blog{
+.blog {
+    /* Тимчасово поки не пофікситься респонсів */
+    overflow: hidden; 
     background-color: var(--secondary-background-color);
     padding: 120px 0;
 
-    .blog__container{
-        margin:auto;
-        display:flex;
-        flex-direction:column;
+    .blog__container {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
         align-items: center;
         max-width: 1200px;
 
-        .blog__title{
+        .blog__title {
             font-size: 14px;
             letter-spacing: 1.4px;
             font-weight: 700;
@@ -17,51 +19,51 @@
             font-family: "Open Sans", sans-serif;
         }
 
-        .blog__subtitle{
+        .blog__subtitle {
             font-size: 50px;
             color: var(--primary-heading-color);
             font-weight: 700;
             font-family: "Poppins", sans-serif;
         }
 
-        .blog__description{
+        .blog__description {
             font-size: 19px;
             color: var(--primary-paragraph-color);
             font-weight: 500;
             font-family: "Open Sans", sans-serif;
         }
 
-        .blog__list{
+        .blog__list {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
 
-            .blog__item{
+            .blog__item {
                 margin: 0 15px;
 
-                .blog__image{
+                .blog__image {
                     max-width: 370px;
                 }
 
-                .blog__meta{
+                .blog__meta {
                     color: var(--accent-paragraph-color);
                     font-size: 15px;
                     font-family: "Open Sans", sans-serif;
                     font-weight: 700;
                     margin-top: 20px;
 
-                    .blog__date{
+                    .blog__date {
                         color: var(--secondary-paragraph-color);
                     }
                 }
 
-                .blog__heading{
+                .blog__heading {
                     font-weight: 600;
                     color: var(--tertiary-heading-color);
                     font-size: 22px;
                 }
 
-                .blog__text{
+                .blog__text {
                     font-size: 17px;
                     color: var(--primary-paragraph-color);
                     font-family: "Open Sans", sans-serif;
@@ -69,7 +71,7 @@
                 }
 
 
-                .blog__link{
+                .blog__link {
                     color: var(--tertiary-link-color);
                     font-size: 13px;
                     font-family: "Open Sans", sans-serif;
@@ -79,23 +81,25 @@
                     display: flex;
                     align-items: center;
                     margin-top: 28px;
-                    &:hover{
+
+                    &:hover {
                         color: var(--secondary-link-color);
                         text-decoration: underline;
                     }
 
-                    .blog__link-text{
-                        &:hover{
-                        color: var(--secondary-link-color);
-                        text-decoration: underline;
+                    .blog__link-text {
+                        &:hover {
+                            color: var(--secondary-link-color);
+                            text-decoration: underline;
                         }
                     }
                 }
 
-                .blog__icon{
+                .blog__icon {
                     color: var(--tertiary-link-color);
                     transition: .2s ease-in;
-                    &:hover{
+
+                    &:hover {
                         color: var(--secondary-link-color);
                     }
                 }
