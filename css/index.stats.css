@@ -7,7 +7,7 @@
     background-color: var(--accent-background-color);
     @media (min-width: 600px) {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
     .cleaning-stats__item {
       .cleaning-stats__number {
