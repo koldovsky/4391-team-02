@@ -3,25 +3,26 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    background-color: var(--accent-background-color);
     @media (min-width: 600px) {
       flex-direction: row;
+      justify-content: space-around;
     }
-    justify-content: center;
-    align-items: center;
-    background-color: var(--accent-background-color);
     .cleaning-stats__item {
       .cleaning-stats__number {
+        text-align: center;
         font-family: "Poppins", sans-serif;
         font-size: 3.125rem;
         font-weight: 700;
         color: var(--secondary-heading-color);
       }
       .cleaning-stats__description {
+        text-align: center;
         font-family: "Open Sans", sans-serif;
         font-size: 1.0625rem;
         font-weight: 400;
         color: #d3d3d3;
-        width: 50%;
       }
     }
   }
