@@ -1,9 +1,14 @@
 .cleaning-video {
+  display: flex;
+  justify-content: left;
+  padding-top: 130px;
+  padding-bottom: 130px;
   .cleaning-video__title {
     font-family: "Open Sans", sans-serif;
     font-size: 0.875rem;
     font-weight: 700;
     color: var(--tertiary-heading-color);
+    background-image: url("../img/video/video-background.png");
   }
   .cleaning-video__subtitle {
     font-family: "Poppins", sans-serif;
@@ -12,9 +17,9 @@
     color: var(--primary-heading-color);
   }
   .cleaning-video__embed {
-      iframe {
-         width: 100%;
-         aspect-ratio: 16/9;
-      }
+    iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
   }
 }
