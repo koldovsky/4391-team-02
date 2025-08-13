@@ -13,6 +13,8 @@
       justify-content: space-evenly;
     }
     .cleaning-stats__item {
+      display: flex;
+      justify-content: center;
       .cleaning-stats__number {
         text-align: center;
         font-family: "Poppins", sans-serif;
