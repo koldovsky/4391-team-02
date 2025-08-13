@@ -14,12 +14,14 @@
     font-size: 0.875rem;
     font-weight: 700;
     color: var(--tertiary-heading-color);
+    margin-bottom: 20px;
   }
   .cleaning-video__subtitle {
     font-family: "Poppins", sans-serif;
     font-size: 3.125rem;
     font-weight: 700;
     color: var(--primary-heading-color);
+    margin-bottom: 20px;
   }
   .cleaning-video__button {
     font-family: "Open Sans", sans-serif;
