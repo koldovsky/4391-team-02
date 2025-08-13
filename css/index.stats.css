@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-color: var(--accent-background-color);
     @media (min-width: 600px) {
       flex-direction: row;
