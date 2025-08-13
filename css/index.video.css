@@ -41,7 +41,7 @@
     transform: scale(1.05);
   }
 
-  .cleaning-video__iframe {
+  .cleaning-video__embed {
     width: 100vw;
     height: calc(100vw * 9 / 16);
     border: none;
