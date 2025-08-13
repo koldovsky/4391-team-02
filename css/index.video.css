@@ -42,7 +42,9 @@
   }
 
   .cleaning-video__iframe {
-    width: 100%;
-    aspect-ratio: 16/9;
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
+    border: none;
+    display: block;
   }
 }
