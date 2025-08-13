@@ -6,6 +6,9 @@
   padding-left: 10px;
   padding-right: 10px;
   background-image: url("../img/video/video-background.png");
+  @media (min-width: 768px) {
+      min-height:793px;
+    }
   .cleaning-video__title {
     font-family: "Open Sans", sans-serif;
     font-size: 0.875rem;
@@ -18,10 +21,9 @@
     font-weight: 700;
     color: var(--primary-heading-color);
   }
-  .cleaning-video__embed {
-    iframe {
-      width: 100%;
-      aspect-ratio: 16/9;
-    }
+  .cleaning-video__button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 700;
   }
 }
