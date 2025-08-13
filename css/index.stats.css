@@ -3,9 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .cleaning-stats__list {
-      background-color: var(--accent-background-color);
-    }
+    background-color: var(--accent-background-color);
     .cleaning-stats__number {
       font-family: "Poppins", sans-serif;
       font-size: 3.125rem;
@@ -21,4 +19,3 @@
     }
   }
 }
-
