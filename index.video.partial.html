@@ -1,6 +1,6 @@
 <!-- Stefania -->
-<section class="cleaning-video">
-  <div class="cleaning-video__contents" id="cleaning-video__contents">
+<section class="cleaning-video" id="cleaning-video__container">
+  <div class="cleaning-video__contents">
     <h2 class="cleaning-video__title">VIDEO</h2>
     <p class="cleaning-video__subtitle">Professional Cleaning Service</p>
     <button class="cleaning-video__button" onclick="playVideo()">
@@ -25,7 +25,7 @@
   <script>
     function playVideo() {
       document.getElementById(
-        "cleaning-video__contents"
+        "cleaning-video__container"
       ).innerHTML = `<iframe width="560" height="315" 
         src="https://www.youtube.com/embed/tZqCwYC1d4E?autoplay=1" 
         frameborder="0" 
