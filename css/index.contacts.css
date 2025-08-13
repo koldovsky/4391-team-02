@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 20px;
 }
+
 .contacts__main {
   background: rgb(244, 244, 244);
 }
@@ -16,6 +17,12 @@
   height: 400px;
   border: 0;
   display: block;
+}
+.contacts__item-title {
+  color: #3c3c3c !important; /* твой тёмно-серый */
+  font-weight: 700;
+  font-size: 22px; /* или нужный размер */
+  margin: 0 0 5px;
 }
 
 @media (min-width: 600px) {
@@ -75,7 +82,6 @@
   font-size: 19px;
   font-weight: 500;
   color: #848484;
-  filter: contrast(3.75);
   margin-bottom: 36px;
 }
 
@@ -128,4 +134,10 @@
 .contacts__link:hover {
   text-decoration: underline;
   /* добавляем подчеркивание при наведении */
+}
+section.contacts .contacts__main h3.contacts__item-title,
+section#contacts h3.contacts__item-title,
+.contacts h3.contacts__item-title {
+  color: #3c3c3c !important;
+  font-weight: 700;
 }
