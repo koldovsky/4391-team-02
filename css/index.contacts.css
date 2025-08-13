@@ -1,6 +1,7 @@
 .contacts {
+  --pad: 30px;
   background-color: #fff;
-   padding: 60px 30px;
+  padding-inline: var(--pad);
 }
 
 .contacts__wrapper {
@@ -14,12 +15,12 @@
 }
 
 .contacts__map {
-  margin-top: 24px;
+  margin-inline: calc(-1 * var(--pad))
 }
 
 .contacts__map iframe {
-  width: 100%;
-  height: 400px;
+  width: calc(100% + 2 * var(--pad))
+  height: 430px;
   border: 0;
   display: block;
 }
@@ -126,122 +127,122 @@
     align-items: stretch;
     /* обидва стовпці по висоті */
   }
+  
+  .contacts__icon {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    background-color: #fcd700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex: 0 0 50px;
+  }
+  
+  .contacts {
+    background-color: #fff;
+    padding: 60px 30px;
+  }
+  
+  .contacts__eyebrow {
+    font-size: 14px;
+    font-weight: 700;
+    color: #3c3c3c;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    letter-spacing: 1.4px;
+  }
+  
+  .contacts__title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #316ccd;
+    margin-bottom: 18px;
+  }
+  
+  .contacts__description {
+    font-size: 19px;
+    font-weight: 500;
+    color: #848484;
+    margin-bottom: 36px;
+  }
+  
+  .contacts__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    gap: 20px;
+  }
+  
+  .contacts__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .contacts__text {
+    font-style: normal;
+    color: #848484;
+    font-size: 17px;
+    font-weight: ;
+  }
+  
+  .contacts__icon-svg {
+    width: 26px;
+    height: 26px;
+    display: block;
+    color: #3c3c3c;
+  }
+  
+  .contacts__map {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contacts__map iframe {
+    height: 100%;
+    /* для мобильных */
+  }
+  
+  .contacts__link {
+    color: #848484;
+    /* серый цвет */
+    text-decoration: none;
+    /* убирал стандартное подчеркивание */
+  }
+  
+  .contacts__link:hover {
+    text-decoration: underline;
+    /* добавил подчеркивание при наведении */
+  }
 }
-
-.contacts__icon {
-  width: 50px;
-  height: 50px;
-  aspect-ratio: 1/1;
-  background-color: #fcd700;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-  flex: 0 0 50px;
-}
-
-.contacts {
-  background-color: #fff;
-  padding: 60px 30px;
-}
-
-.contacts__eyebrow {
-  font-size: 14px;
-  font-weight: 700;
-  color: #3c3c3c;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  letter-spacing: 1.4px;
-}
-
-.contacts__title {
-  font-size: 38px;
-  font-weight: 700;
-  color: #316ccd;
-  margin-bottom: 18px;
-}
-
-.contacts__description {
-  font-size: 19px;
-  font-weight: 500;
-  color: #848484;
-  margin-bottom: 36px;
-}
-
-.contacts__list {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  gap: 20px;
-}
-
-.contacts__item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-.contacts__text {
-  font-style: normal;
-  color: #848484;
-  font-size: 17px;
-  font-weight: ;
-}
-
-.contacts__icon-svg {
-  width: 26px;
-  height: 26px;
-  display: block;
-  color: #3c3c3c;
-}
-
-.contacts__map {
-  margin: 0;
-  padding: 0;
-}
-
-.contacts__map iframe {
-  height: 100%;
-  /* для мобильных */
-}
-
-.contacts__link {
-  color: #848484;
-  /* серый цвет */
-  text-decoration: none;
-  /* убирал стандартное подчеркивание */
-}
-
-.contacts__link:hover {
-  text-decoration: underline;
-  /* добавил подчеркивание при наведении */
-}
-
-section.contacts .contacts__main h3.contacts__item-title,
-section#contacts h3.contacts__item-title,
-.contacts h3.contacts__item-title {
-  color: #3c3c3c !important;
-  font-weight: 700;
-}
-
-/* --- MOBILE RESET для секції Contacts --- */
-section.contacts .contacts__wrapper {
-  display: block;
-  /* мобілка: все стовпчиком */
-}
-
-section.contacts .contacts__list {
-  display: flex;
-  /* ВАЖЛИВО: вертикальний список */
-  flex-direction: column;
-  gap: 20px;
-}
-
-section.contacts .contacts__item {
+  
+  section.contacts .contacts__main h3.contacts__item-title,
+  section#contacts h3.contacts__item-title,
+  .contacts h3.contacts__item-title {
+    color: #3c3c3c !important;
+    font-weight: 700;
+  }
+  
+  /* --- MOBILE RESET для секції Contacts --- */
+  section.contacts .contacts__wrapper {
+    display: block;
+    /* мобілка: все стовпчиком */
+  }
+  
+  section.contacts .contacts__list {
+    display: flex;
+    /* ВАЖЛИВО: вертикальний список */
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  section.contacts .contacts__item {
   display: flex;
   align-items: flex-start;
 }
