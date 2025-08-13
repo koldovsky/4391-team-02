@@ -135,3 +135,9 @@
   text-decoration: underline;
   /* добавляем подчеркивание при наведении */
 }
+section.contacts .contacts__main h3.contacts__item-title,
+section#contacts h3.contacts__item-title,
+.contacts h3.contacts__item-title {
+  color: #3c3c3c !important;
+  font-weight: 700;
+}
