@@ -1,14 +1,14 @@
 /* Illia Stefanov */
 .work {
   background: url("../img/textbackground/raw.svg") center/cover no-repeat fixed;
-  padding: 2em 1em;
+  padding: 7em 4em;
   font-family: "Nunito", sans-serif;
   color: #dde5ed;
   text-align: center;
 }
 
 .work__subtitle {
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 3vw, 2rem);
   color: #dde5ed;
   margin: 0;
 }
@@ -31,11 +31,14 @@
   flex-direction: column;
   gap: 2em;
   margin-top: 2em;
+  align-items: stretch; 
 }
 
 .work__row__item {
-  max-width: 90%;
-  margin: 0 auto;
+  max-width: none;     
+  width: 100%;
+  margin: 0;           
+  text-align: left;    
 }
 
 .work__row__item strong {
@@ -52,7 +55,7 @@
   display: block;
   width: 30px;
   height: 2px;
-  background: var(--lower-subtitle-work-color);
+  background-color: #4E81D4;
   margin: 0.5em auto 0;
 }
 
@@ -65,15 +68,6 @@
 
 /* Десктоп */
 @media (min-width: 768px) {
-  .work__title {
-    font-size: 3rem;
-  }
-
-  .work__subtitle,
-  .work__subtitle__low {
-    font-size: 1.4rem;
-  }
-
   .work__row {
     flex-direction: row;
     flex-wrap: wrap;
@@ -81,13 +75,14 @@
     gap: 4em;
     max-width: 1200px;
     margin: 3em auto 0;
+    padding: 0;
   }
 
   .work__row__item {
     max-width: 250px;
   }
 
-  .work__row__item strong {
-    font-size: 1.4rem;
+  .work__row__item strong::after {
+    margin-left: 0;
   }
 }
