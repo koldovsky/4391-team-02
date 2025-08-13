@@ -8,6 +8,7 @@
   background-image: url("../img/video/video-background.png");
   @media (min-width: 768px) {
     min-height: 793px;
+    padding-left: 50px;
   }
   .cleaning-video__title {
     font-family: "Open Sans", sans-serif;
