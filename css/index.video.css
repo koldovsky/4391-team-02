@@ -40,4 +40,9 @@
   .cleaning-video__button:hover {
     transform: scale(1.05);
   }
+
+  .cleaning-video__iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
 }
