@@ -27,6 +27,9 @@
         font-weight: 400;
         color: #d3d3d3;
       }
+      .cleaning-stats__divider {
+        margin: 10px auto;
+      }
     }
   }
 }

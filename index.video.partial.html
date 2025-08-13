@@ -1,9 +1,18 @@
 <!-- Stefania -->
-<section class="cleaning-video">
-  <div class="cleaning-video__contents" id="cleaning-video__container">
+<section class="cleaning-video" id="cleaning-video__container">
+  <div class="cleaning-video__contents">
     <h2 class="cleaning-video__title">VIDEO</h2>
     <p class="cleaning-video__subtitle">Professional Cleaning Service</p>
     <button class="cleaning-video__button" onclick="playVideo()">
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 50 50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="25" cy="25" r="25" fill="#90c43f" />
+        <polygon points="20,17 32,25 20,33" fill="white" />
+      </svg>
       Watch Now
     </button>
   </div>
@@ -25,12 +34,13 @@
   <script>
     function playVideo() {
       document.getElementById(
-        "video-container"
-      ).innerHTML = `<iframe width="560" height="315" 
+        "cleaning-video__container"
+      ).outerHTML = `<iframe class = "cleaning-video__embed"
         src="https://www.youtube.com/embed/tZqCwYC1d4E?autoplay=1" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>`;
+      Z;
     }
   </script>
 </section>
