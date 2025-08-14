@@ -6,8 +6,13 @@
   padding-left: 10px;
   padding-right: 10px;
   background-image: url("../img/video/video-background.png");
-  background-position-x: 55%;
+  background-position-x: 45%;
   background-size: cover;
+  @media (min-width: 357px) {
+    .cleaning-video__subtitle {
+      font-size: 3.125 rem;
+    }
+  }
   @media (min-width: 768px) {
     min-height: 793px;
     padding-left: 50px;
@@ -21,7 +26,7 @@
   }
   .cleaning-video__subtitle {
     font-family: "Poppins", sans-serif;
-    font-size: 3.125rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--primary-heading-color);
     margin-bottom: 20px;
