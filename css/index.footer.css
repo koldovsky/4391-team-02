@@ -184,6 +184,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 100%;
     color: var(--footer-paragraph-color);
     font-size: 14px;
   }
