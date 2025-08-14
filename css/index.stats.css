@@ -1,4 +1,5 @@
 .cleaning-stats {
+  background-color: var(--accent-background-color);
   .cleaning-stats__list {
     list-style-type: none;
     display: flex;
@@ -7,7 +8,7 @@
     align-content: center;
     padding-bottom: 60px;
     padding-top: 60px;
-    background-color: var(--accent-background-color);
+
     @media (min-width: 768px) {
       flex-direction: row;
       justify-content: space-evenly;
@@ -22,6 +23,7 @@
         font-size: 3.125rem;
         font-weight: 700;
         color: var(--secondary-heading-color);
+        margin-bottom: 10px;
       }
       .cleaning-stats__description {
         text-align: center;
@@ -29,10 +31,15 @@
         font-size: 1.0625rem;
         font-weight: 400;
         color: #d3d3d3;
+        margin-top: 10px;
       }
       .cleaning-stats__divider {
         margin: 10px auto;
       }
     }
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
   }
 }

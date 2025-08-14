@@ -6,6 +6,8 @@
   padding-left: 10px;
   padding-right: 10px;
   background-image: url("../img/video/video-background.png");
+  background-position-x: 55%;
+  background-size: cover;
   @media (min-width: 768px) {
     min-height: 793px;
     padding-left: 50px;
@@ -39,5 +41,10 @@
 
   .cleaning-video__button:hover {
     transform: scale(1.05);
+  }
+
+  .container {
+    max-width: 2000px;
+    margin: auto;
   }
 }
