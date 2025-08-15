@@ -1,14 +1,14 @@
 .testimonials {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 80vh;
-    padding: 80px 0;
-    color: var(--primary-heading-color, #316ccd);
-    overflow: hidden;
-    background-color: var(--primary-background-color, #ffffff);
-    }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  padding: 80px 0;
+  color: var(--primary-heading-color);
+  overflow: hidden;
+  background-color: var(--primary-background-color);
+}
 
 .testimonials__container {
   max-width: 1200px;
@@ -18,65 +18,63 @@
   text-align: center;
 }
 
-.testimonials__header{
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 20px;
+.testimonials__header {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
-.testimonials__title{
-    color: var(--tertiary-heading-color);
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 10px;
+
+.testimonials__title {
+  color: var(--tertiary-heading-color);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
-.testimonials__subtitle{
-    color: var(--primary-heading-color);
-    font-size: 44px;
-    font-weight: bold;
-    margin-bottom: 20px;
+
+.testimonials__subtitle {
+  color: var(--primary-heading-color);
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
-.testimonials__description{
-    color: var(--primary-paragraph-color, #848484);
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto 40px;
-    margin-bottom: 70px;
+
+.testimonials__description {
+  color: var(--primary-paragraph-color);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 70px;
 }
+
 .testimonials__carousel {
   position: relative;
   width: 100%;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
 }
+/* Viewport */
 .testimonials__track-container {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Лінія слайдів */
+.testimonials__track {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-.testimonials__track {
-   display: flex; 
-   gap: 30px; 
-   transition: transform 0.5s ease-in-out; 
-}
 
+/* Один слайд */
 .testimonials__slide {
   flex: 0 0 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 .testimonials__image {
   display: block;
   margin: 0 auto 20px;
+  border-radius: 50%;
+  object-fit: cover;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  object-fit: cover;
 }
 
 .testimonials__name {
@@ -95,77 +93,74 @@
 
 .testimonials__date {
   font-weight: 600;
-  color: var(--accent-paragraph-color, #90c43f);
+  color: var(--accent-paragraph-color);
 }
 
+/* Кнопки */
 .testimonials__button {
   position: absolute;
-  top: 45%;
-  background-color: var(--primary-accent-color, #3b82f6);
-  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--modal-button-color, #316ccd);
+  color: var(--primary-background-color, #fff);
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  transition: background-color 0.3s ease;
+  font-size: 14px;
   z-index: 2;
+  cursor: pointer;
 }
 
 .testimonials__button:hover {
-  color: var(--primary-accent-hover-color, #2563eb);
+  background-color: var(--primary-accent-hover-color, #2563eb);
 }
 
-.testimonials__button--prev {
-  left: 20px;
+.testimonials__button--prev { left: 10px; }
+.testimonials__button--next { right: 10px; }
+
+/* Ховаємо всі стрілки за замовчуванням */
+.js-arrows-s1, .js-arrows-s2 {
+  display: none;
 }
 
-.testimonials__button--next {
-  right: 20px;
-}
+/* Показуємо правильну пару залежно від активного слайду */
+#slide1:checked ~ .testimonials__carousel .js-arrows-s1 { display: flex; }
+#slide2:checked ~ .testimonials__carousel .js-arrows-s2 { display: flex; }
 
-/* For mobile devices */
+/* Перемикання слайдів */
+#slide1:checked ~ .testimonials__carousel .testimonials__track { margin-left: 0; }
+#slide2:checked ~ .testimonials__carousel .testimonials__track { margin-left: -100%; }
+
+/* Мобільні */
 @media (max-width: 767px) {
+  .testimonials__slide {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
   .testimonials__button {
     width: 28px;
     height: 28px;
-
-    font-size: 20px;
-    color: var(--secondary-heading-color, #ffffff);
+    font-size: 12px;
   }
-
-  .testimonials__button--prev {
-    left: 5px; 
-  }
-
-  .testimonials__button--next {
-    right: 5px; 
-  }
-
-  .testimonials__quote {
-    padding: 0 60px; 
-  }
+  .testimonials__button--prev { left: 5px; }
+  .testimonials__button--next { right: 5px; }
 }
-/* For PC */
+
+/* ПК */
 @media (min-width: 1200px) {
-    .testimonials__button {
-    font-size: 20px;
-    color: var(--secondary-heading-color, #ffffff);
-    transform: none;
-    }
-
-    .testimonials__button--prev {
-        left: 20px;
-    }
-
-    .testimonials__button--next {
-        right: 20px;
-    }
-
-    .testimonials__quote {
-        padding: 0 80px; 
-    }
+  .testimonials__image {
+    width: 150px;
+    height: 150px;
+  }
+  .testimonials__button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  .testimonials__button--prev { left: 20px; }
+  .testimonials__button--next { right: 20px; }
 }
