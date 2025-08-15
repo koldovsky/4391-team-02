@@ -1,8 +1,15 @@
 .blog {
     /* Тимчасово поки не пофікситься респонсів */
-    overflow: hidden; 
     background-color: var(--secondary-background-color);
     padding: 120px 0;
+
+    @media (max-width: 992px) {
+        padding: 105px 0;
+    }
+
+    @media (max-width: 470px) {
+        padding: 90px 0;
+    }
 
     .blog__container {
         margin: auto;
@@ -10,39 +17,89 @@
         flex-direction: column;
         align-items: center;
         max-width: 1200px;
+        padding: 0 40px;
 
-        .blog__title {
-            font-size: 14px;
-            letter-spacing: 1.4px;
-            font-weight: 700;
-            color: var(--tertiary-heading-color);
-            font-family: "Open Sans", sans-serif;
+        @media (max-width: 992px) {
+            padding: 0 32px;
         }
 
-        .blog__subtitle {
-            font-size: 50px;
-            color: var(--primary-heading-color);
-            font-weight: 700;
-            font-family: "Poppins", sans-serif;
+        @media (max-width: 470px) {
+            padding: 0 24px;
         }
 
-        .blog__description {
-            font-size: 19px;
-            color: var(--primary-paragraph-color);
-            font-weight: 500;
-            font-family: "Open Sans", sans-serif;
+        .blog__text-container {
+            text-align: center;
+            display: grid;
+            gap: 20px;
+
+            .blog__title {
+                font-size: 14px;
+                letter-spacing: 1.4px;
+                font-weight: 700;
+                color: var(--tertiary-heading-color);
+                font-family: "Open Sans", sans-serif;
+                text-align: center;
+            }
+
+            .blog__subtitle {
+                font-size: 50px;
+                color: var(--primary-heading-color);
+                font-weight: 700;
+                font-family: "Poppins", sans-serif;
+
+                @media (max-width: 992px) {
+                    font-size: 44px;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 38px;
+                }
+            }
+
+            .blog__description {
+                font-size: 19px;
+                color: var(--primary-paragraph-color);
+                font-weight: 500;
+                font-family: "Open Sans", sans-serif;
+                margin-bottom: 40px;
+            }
         }
 
         .blog__list {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            gap: 50px 0;
+
+            @media (max-width: 992px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (max-width: 470px) {
+                grid-template-columns: 1fr;
+            }
 
             .blog__item {
-                margin: 0 15px;
+                padding: 0 15px;
+                flex: 1;
+                display: grid;
+                gap: 15px;
+
+                @media (min-width: 1280px) {
+                    width: 400px;
+                }
+
+                &:last-of-type {
+                    @media (max-width: 992px) {
+                        grid-column: 1 / -1;
+                        justify-self: center;
+                    }
+                }
 
                 .blog__image {
-                    max-width: 370px;
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
                 }
 
                 .blog__meta {
@@ -68,6 +125,7 @@
                     color: var(--primary-paragraph-color);
                     font-family: "Open Sans", sans-serif;
                     font-weight: 400;
+                    line-height: 1.75;
                 }
 
 
@@ -80,27 +138,22 @@
                     transition: .2s ease-in;
                     display: flex;
                     align-items: center;
-                    margin-top: 28px;
+                    margin-top: 10px;
 
-                    &:hover {
+                    &:hover .blog__link-text, &:hover .blog__icon {
                         color: var(--secondary-link-color);
                         text-decoration: underline;
                     }
 
                     .blog__link-text {
-                        &:hover {
-                            color: var(--secondary-link-color);
-                            text-decoration: underline;
-                        }
+                        color: var(--tertiary-link-color);
                     }
-                }
 
-                .blog__icon {
-                    color: var(--tertiary-link-color);
-                    transition: .2s ease-in;
-
-                    &:hover {
-                        color: var(--secondary-link-color);
+                    .blog__icon {
+                        color: var(--tertiary-link-color);
+                        transition: .2s ease-in;
+                        margin-top: 2px;
+                        margin-left: 5px;
                     }
                 }
             }
