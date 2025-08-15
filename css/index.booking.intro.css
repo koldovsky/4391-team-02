@@ -7,10 +7,8 @@
     color: var(--tertiary-heading-color);
     overflow: hidden;
     padding: 50px 0;
-    background: no-repeat 14.69% 48.84% / cover, var(--secondary-background-color);
-    background-image: url("../img/booking-intro/booking-intro-bg-desktop.png");
+    background: var(--secondary-background-color) url("../img/booking-intro/booking-intro-bg-desktop.png") no-repeat 49% 48.84% / cover;
 }
-
 .booking-intro__content {
     display: flex;
     flex-direction: column;
@@ -106,8 +104,7 @@
     .booking-intro-section {
         min-height: 80vh;
         padding: 80px 0;
-        background: no-repeat 49.06% 100% / cover;
-        background-image: url("../img/booking-intro/booking-intro-bg-desktop.png");
+        background: var(--secondary-background-color) url("../img/booking-intro/booking-intro-bg-desktop.png") no-repeat 49% 100% / cover;
     }
 
     .booking-intro__title {
