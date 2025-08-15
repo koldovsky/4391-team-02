@@ -104,6 +104,7 @@
 /* For desktop*/
 @media (min-width: 768px) {
     .booking-intro-section {
+        min-height: 80vh;
         padding: 80px 0;
         background: no-repeat 49.06% 100% / cover;
         background-image: url("../img/booking-intro/booking-intro-bg-desktop.png");
