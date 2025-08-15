@@ -1,3 +1,4 @@
+/* I redid it, now first mobile styles without queries */
 .booking-intro-section {
     position: relative;
     display: flex;
@@ -5,35 +6,9 @@
     min-height: 80vh;
     color: var(--tertiary-heading-color);
     overflow: hidden;
-    padding: 80px 0;
-}
-
-/* Background image for PC*/
-@media (min-width: 768px) {
-    .booking-intro-section {
-        background: no-repeat 49.06% 100% / cover,
-            var(--secondary-background-color);
-        background-image: url("../img/booking-intro/booking-intro-bg-desktop.png");
-    }
-}
-
-/* Styles for phones */
-@media (max-width: 767px) {
-    .booking-intro-section {
-        min-height: auto;
-        padding-bottom: 50px;
-        background: no-repeat 14.69% 48.84% / cover,
-            var(--secondary-background-color);
-        background-image: url("../img/booking-intro/booking-intro-bg-desktop.png");
-    }
-    .booking-intro__header,
-    .booking-intro__footer {
-        max-width: 100%;
-        text-align: center;
-    }
-    .booking-intro__actions {
-        justify-content: center;
-    }
+    padding: 50px 0;
+    background: no-repeat 14.69% 48.84% / cover, var(--secondary-background-color);
+    background-image: url("../img/booking-intro/booking-intro-bg-desktop.png");
 }
 
 .booking-intro__content {
@@ -48,18 +23,13 @@
 
 .booking-intro__header {
     margin-bottom: 30px;
+    max-width: 100%;
+    text-align: center;
 }
 
 .booking-intro__footer {
-    max-width: 450px;
-}
-
-/* PC Styles */
-@media (min-width: 1200px) {
-    .booking-intro__header,
-    .booking-intro__footer {
-        max-width: 50%;
-    }
+    max-width: 100%;
+    text-align: center;
 }
 
 .booking-intro__subheading {
@@ -71,7 +41,7 @@
 }
 
 .booking-intro__title {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.1;
     color: var(--primary-heading-color);
@@ -83,7 +53,7 @@
 }
 
 .booking-intro__description {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 30px;
     color: var(--primary-paragraph-color);
@@ -94,8 +64,10 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
+/* I slightly redesigned the button because I didn't like the animation and it didn't look like the original. */
 .booking-intro__button {
     padding: 15px 40px;
     border-radius: 10px;
@@ -129,18 +101,56 @@
     margin-right: 10px;
 }
 
-/* modal window*/
+/* For desktop*/
+@media (min-width: 768px) {
+    .booking-intro-section {
+        padding: 80px 0;
+        background: no-repeat 49.06% 100% / cover;
+    }
+
+    .booking-intro__title {
+        font-size: 60px;
+    }
+
+    .booking-intro__description {
+        font-size: 18px;
+    }
+
+    .booking-intro__header,
+    .booking-intro__footer {
+        text-align: left;
+    }
+
+    .booking-intro__actions {
+        justify-content: flex-start;
+    }
+}
+
+/* large monitors */
+@media (min-width: 1200px) {
+
+    .booking-intro__header,
+    .booking-intro__footer {
+        max-width: 50%;
+    }
+
+    .booking-intro__footer {
+        max-width: 450px;
+    }
+}
+
 .modal-title.h4 {
-    color: var(--modal-subheading-color); 
+    color: var(--modal-subheading-color);
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 500;
 }
 
 .modal-title.fw-bold {
-    color: var(--modal-heading-color); 
+    color: var(--modal-heading-color);
     font-size: 40px;
     margin-bottom: 10px;
+    font-family: Poppins, sans-serif;
 }
 
 .modal-body p {
@@ -149,7 +159,7 @@
 
 .form-floating .form-control {
     border-radius: 10px;
-    background-color: var(--input-background-color); 
+    background-color: var(--input-background-color);
     border-color: var(--input-border-color);
 }
 
@@ -158,11 +168,22 @@
 }
 
 .btn-primary {
-    background-color: var(--modal-button-color); 
+    background-color: var(--modal-button-color);
     border-color: var(--modal-button-color);
+    font-family: Poppins, sans-serif;
 }
 
 .btn-primary:hover {
-    background-color: var(--accent-background-color); 
+    background-color: var(--accent-background-color);
     border-color: var(--accent-background-color);
+}
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 600px;
+    }
 }
