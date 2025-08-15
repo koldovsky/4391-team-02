@@ -1,70 +1,58 @@
-<!--Oleksandra Stadnyk-->
 <section class="testimonials" aria-labelledby="testimonials-title">
-  <div class="testimonials-container">
+
+  <div class="testimonials__container container">
     <header class="testimonials__header">
-      <h2 class="testimonials__title" id="testimonials-title">
-        Testimonials
-      </h2>
-      <p class="testimonials-container__subtitle">Our Clients Say</p>
-      <p class="testimonials-container__description">
+      <h2 class="testimonials__title" id="testimonials-title">TESTIMOMIALS</h2>
+      <p class="testimonials__subtitle">Our Clients Say</p>
+      <p class="testimonials__description">
         We are happy to make your homes and offices cleaner.
       </p>
     </header>
 
-    <div class="testimonials-carousel" role="region" aria-label="Testimonials carousel">
-      <div class="testimonials__track-container">
+    <div class="testimonials__carousel testimonials__carousel-slide-1" role="region" aria-labelledby="testimonials-title">
+      <div class="testimonials__track-container testimonials__track-container-slide-1-content">
         <ul class="testimonials__track">
-
+          
           <li class="testimonials__slide">
             <figure class="testimonials__item">
-              <img src="img/testimonials/testimonials-jesse-v.webp" alt="Jesse V., Chicago" class="testimonials__image" width="96" height="96"/>
+              <img src="img/testimonials/testimonials-jesse-v.webp" alt="Photo of Jesse V., Chicago" class="testimonials__image" width="96" height="96">
               <figcaption class="testimonials__caption">
-                <h3 class="testimonials__name">
-                <span>Jesse V., Chicago</span>
-                </h3>
+                <h3 class="testimonials__name">Jesse V., Chicago</h3>
                 <blockquote class="testimonials__quote">
-                  "When our company of 500 employees just moved into a brand new
-                  office in a different part of the city, we had no one to help
-                  us with the cleaning. Luckily, we were referred to these guys.
-                  It is amazing that 5 guys can clean a 5,000 ft<sup>2</sup>
-                  premise so well and fast."
+                  &ldquo;When our company of 500 employees just moved into a brand new office in a different 
+                  part of the city, we had no one to help us with the cleaning. Luckily, we were referred to 
+                  these guys. It is amazing that 5 guys can clean a 5,000 <abbr title="square feet">ft<sup>2</sup></abbr> premise so well and fast.&rdquo;
                 </blockquote>
-                <time class="testimonials__date" datetime="2024-12-15"
-                  ><span>December 15, 2024</span></time
-                >
+                <time class="testimonials__date" datetime="2024-12-15">December 15, 2024</time>
               </figcaption>
             </figure>
           </li>
 
           <li class="testimonials__slide">
             <figure class="testimonials__item">
-              <img
-                src="img/testimonials/testimonials-jimmy-c.webp" alt="Jimmy C., NYC" class="testimonials__image" width="96" height="96"/>
+              <img src="img/testimonials/testimonials-jimmy-c.webp" alt="Photo of Jimmy C., NYC" class="testimonials__image" width="96" height="96">
               <figcaption class="testimonials__caption">
-                <h3 class="testimonials__name">
-                <span>Jimmy C., NYC</span>
-                </h3>
+                <h3 class="testimonials__name">Jimmy C., NYC</h3>
                 <blockquote class="testimonials__quote">
-                  "My home looks excellent, very professional service from start
-                  to finish! I`m completely satisfied with the cleaning and just
-                  in love with your cleaning crew. They were attentive to every
-                  detail. I have no words to describe how pleased I am."
+                  &ldquo;My home looks excellent, very professional service from start to finish! I&rsquo;m completely 
+                  satisfied with the cleaning and just in love with your cleaning crew. They were attentive 
+                  to every detail. I have no words to describe how pleased I am.&rdquo;
                 </blockquote>
-                <time class="testimonials__date" datetime="2024-05-25"
-                  ><span>May 25, 2024</span></time
-                >
+                <time class="testimonials__date" datetime="2024-05-25">May 25, 2024</time>
               </figcaption>
             </figure>
           </li>
+
         </ul>
       </div>
 
-      <button class="testimonials__button testimonials__button--prev" type="button" aria-label="Previous testimonial"></button>
-      <button class="testimonials__button testimonials__button--next" type="button" aria-label="Next testimonial"></button>
-      <div class="testimonials__indicators">
-        <button class="testimonials__indicator testimonials__indicator--active" type="button" aria-label="View testimonial 1" data-slide-to="0"></button>
+      <button class="testimonials__button testimonials__button--prev" type="button" aria-label="Show previous testimonial">&#10094;</button>
+      <button class="testimonials__button testimonials__button--next" type="button" aria-label="Show next testimonial">&#10095;</button>
+
+      <nav class="testimonials__indicators" aria-label="Testimonials navigation">
+        <button class="testimonials__indicator testimonials__indicator--active" type="button" aria-label="View testimonial 1" data-slide-to="0"</button>
         <button class="testimonials__indicator" type="button" aria-label="View testimonial 2" data-slide-to="1"></button>
-      </div>
+      </nav>
     </div>
   </div>
 </section>

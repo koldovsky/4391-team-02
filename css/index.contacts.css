@@ -1,6 +1,12 @@
 .contacts {
-  background-color: #fff;
-   padding: 60px 30px;
+  --pad: 30px;
+  --title-color: var(--primary-heading-color);
+  --heading-color: var(--tertiary-heading-color);
+  --text-color: var(--primary-paragraph-color);
+  --icon-bg: var(--primary-button-color);
+  --bg: var(--primary-background-color);
+  background-color: var(--bg);
+  padding: 60px var(--pad);
 }
 
 .contacts__wrapper {
@@ -10,8 +16,91 @@
 }
 
 .contacts__main {
-  padding: 90px 30px;
+  padding: 0;
 }
+
+.contacts__eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--heading-color);
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  margin-bottom: 10px;
+}
+
+.contacts__title {
+  font-size: 38px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 18px;
+}
+
+.contacts__description {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text-color);
+  margin-bottom: 36px;
+}
+
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.contacts__icon {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  border-radius: 50%;
+  background-color: var(--icon-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts__icon-svg {
+  width: 26px;
+  height: 26px;
+  display: block;
+  color: var(--heading-color);
+}
+
+.contacts__item-title {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 0 0 5px;
+}
+
+.contacts__text {
+  font-style: normal;
+  color: var(--text-color);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.contacts__link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.contacts__link:hover {
+  text-decoration: underline;
+}
+
 
 .contacts__map {
   margin-top: 24px;
@@ -19,259 +108,33 @@
 
 .contacts__map iframe {
   width: 100%;
-  height: 400px;
+  height: 430px;
+  display: block;
   border: 0;
-  display: block;
 }
-
-.contacts__eyebrow {
-  font-size: 14px;
-  font-weight: 700;
-  color: #3c3c3c;
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
-  margin-bottom: 10px;
-}
-
-.contacts__title {
-  font-size: 38px;
-  font-weight: 700;
-  color: #316ccd;
-  margin-bottom: 18px;
-}
-
-.contacts__description {
-  font-size: 19px;
-  font-weight: 500;
-  color: #848484;
-  margin-bottom: 36px;
-}
-
-.contacts__list {
-  display: flex;
-  /* вертикальний список */
-  flex-direction: column;
-  list-style: none;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-}
-
-.contacts__item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin: 0;
-  /* щоб не плодити зовнішні відступи */
-}
-
-.contacts__icon {
-  width: 50px;
-  height: 50px;
-  aspect-ratio: 1 / 1;
-  background-color: #fcd700;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 50px;
-}
-
-.contacts__icon-svg {
-  width: 26px;
-  height: 26px;
-  display: block;
-  color: #3c3c3c;
-}
-
-.contacts__item-title {
-  color: #3c3c3c !important;
-  font-weight: 700;
-  font-size: 22px;
-  margin: 0 0 5px;
-}
-
-.contacts__text {
-  font-style: normal;
-  color: #848484;
-  font-size: 17px;
-  /* font-weight: 400;  // за потреби */
-}
-
-.contacts__link {
-  color: #848484;
-  text-decoration: none;
-}
-
-.contacts__link:hover {
-  text-decoration: underline;
-}
-
 @media (min-width: 600px) {
-  .contacts__main {
-    padding: 105px 60px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
   .contacts {
-    padding: 105px 30px;
+    padding: 0 var(--pad);
   }
 
   .contacts__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* ліворуч контент, праворуч карта */
-    gap: 0px;
-    align-items: stretch;
-    /* обидва стовпці по висоті */
-  }
-}
-
-.contacts__icon {
-  width: 50px;
-  height: 50px;
-  aspect-ratio: 1/1;
-  background-color: #fcd700;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-  flex: 0 0 50px;
-}
-
-.contacts {
-  background-color: #fff;
-  padding: 60px 30px;
-}
-
-.contacts__eyebrow {
-  font-size: 14px;
-  font-weight: 700;
-  color: #3c3c3c;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  letter-spacing: 1.4px;
-}
-
-.contacts__title {
-  font-size: 38px;
-  font-weight: 700;
-  color: #316ccd;
-  margin-bottom: 18px;
-}
-
-.contacts__description {
-  font-size: 19px;
-  font-weight: 500;
-  color: #848484;
-  margin-bottom: 36px;
-}
-
-.contacts__list {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  gap: 20px;
-}
-
-.contacts__item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 20px;
-}
-
-.contacts__text {
-  font-style: normal;
-  color: #848484;
-  font-size: 17px;
-  font-weight: ;
-}
-
-.contacts__icon-svg {
-  width: 26px;
-  height: 26px;
-  display: block;
-  color: #3c3c3c;
-}
-
-.contacts__map {
-  margin: 0;
-  padding: 0;
-}
-
-.contacts__map iframe {
-  height: 100%;
-  /* для мобильных */
-}
-
-.contacts__link {
-  color: #848484;
-  /* серый цвет */
-  text-decoration: none;
-  /* убирал стандартное подчеркивание */
-}
-
-.contacts__link:hover {
-  text-decoration: underline;
-  /* добавил подчеркивание при наведении */
-}
-
-section.contacts .contacts__main h3.contacts__item-title,
-section#contacts h3.contacts__item-title,
-.contacts h3.contacts__item-title {
-  color: #3c3c3c !important;
-  font-weight: 700;
-}
-
-/* --- MOBILE RESET для секції Contacts --- */
-section.contacts .contacts__wrapper {
-  display: block;
-  /* мобілка: все стовпчиком */
-}
-
-section.contacts .contacts__list {
-  display: flex;
-  /* ВАЖЛИВО: вертикальний список */
-  flex-direction: column;
-  gap: 20px;
-}
-
-section.contacts .contacts__item {
-  display: flex;
-  align-items: flex-start;
-}
-
-section.contacts .contacts__map {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-section.contacts .contacts__map iframe {
-  width: 100%;
-  height: 400px;
-  /* щоб карта не була «смужкою» */
-  border: 0;
-  display: block;
-}
-
-/* --- DESKTOP >= 600px --- */
-@media (min-width: 600px) {
-  section.contacts .contacts__wrapper {
-    display: grid;
-    /* дві колонки: ліворуч текст, праворуч карта */
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(520px, 560px) 1fr;
     align-items: stretch;
     gap: 0;
+    min-height: 560px;
   }
 
-  section.contacts .contacts__map iframe {
+  .contacts__main {
+    padding: 105px 40px 105px 60px;
+  }
+
+  .contacts__map {
+    margin: 0;
+    min-height: 560px;
+  }
+
+  .contacts__map iframe {
     height: 100%;
-    /* карта на всю висоту секції */
   }
 }
