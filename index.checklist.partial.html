@@ -1,7 +1,7 @@
 <!-- Volodymyr Shvets -->
 <section class="checklist">
     <p class="checklist__title">CHECKLIST</p>
-    <h1 class="checklist__description-title">Our Cleaning Checklist</h1>
+    <p class="checklist__description-title">Our Cleaning Checklist</p>
     <p class="checklist__text">Here's what we clean and handle during our work.</p>
 
     <div class="checklist__content">
@@ -10,12 +10,39 @@
                 alt="Cleaning Checklist Image" />
         </div>
 
-        <div class="checklist__collection">
-            <div class="checklist__card checklist__card--dust-floors">
-                <h2 class="checklist__card-title">Dust & Floors</h2>
-                <p class="checklist__card-text">
-                    We leave no chance for dust by cleaning all surfaces.
-                </p>
+        <div class="checklist__collection container">
+            <article class="checklist__card checklist__card--dust-floors">
+                <p class="checklist__card-title">Dust & Floors</p>
+
+                <!--div class="divider">
+                    <div class="divider__wrapper">
+                        <svg class="divider__svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                            <path class="divider__line" d="M0 16.5 L3000 16.5"></path>
+                        </svg>
+                    </div>
+                </div-->
+
+                <div class="decorator-inner_26F flex_3-n">
+                    <div class="w-divider-component-wrapper divider-component-wrapper_XE2">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg" width="3000px" height="33" style="width:15%">
+                            <path d="M0 16.5 L3000 16.5" style="fill:none;stroke:rgb(144, 196, 63);stroke-width:3px">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="checklist__text-button-wrapper">
+                    <p class="checklist__card-text">
+                        We leave no chance for dust by cleaning all surfaces.
+                    </p>
+
+                    <button class="toggle-btn" id="toggleBtn" aria-label="Toggle plus minus">
+                        <span class="toggle-btn__line toggle-btn__line--vertical"></span>
+                        <span class="toggle-btn__line toggle-btn__line--horizontal"></span>
+                    </button>
+                </div>
+
                 <ul class="checklist__list">
                     <li>Lighting fixtures;</li>
                     <li>Vents;</li>
@@ -31,13 +58,22 @@
                     <li>Wet mopping;</li>
                     <li>Wipe down baseboards.</li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="checklist__card checklist__card--wipe-down">
-                <h2 class="checklist__card-title">Wipe Down</h2>
-                <p class="checklist__card-text">
-                    All smooth surfaces in your home or office will shine again.
-                </p>
+            <article class="checklist__card checklist__card--wipe-down">
+                <p class="checklist__card-title">Wipe Down</p>
+
+                <div class="checklist__text-button-wrapper">
+                    <p class="checklist__card-text">
+                        All smooth surfaces in your home or office will shine again.
+                    </p>
+
+                    <button class="toggle-btn" id="toggleBtn" aria-label="Toggle plus minus">
+                        <span class="toggle-btn__line toggle-btn__line--vertical"></span>
+                        <span class="toggle-btn__line toggle-btn__line--horizontal"></span>
+                    </button>
+                </div>
+
                 <ul class="checklist__list">
                     <li>Kitchen counters;</li>
                     <li>Kitchen cabinets (exterior);</li>
@@ -54,13 +90,22 @@
                     <li>Shelves;</li>
                     <li>Blinds.</li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="checklist__card checklist__card--scrub">
-                <h2 class="checklist__card-title">Scrub</h2>
-                <p class="checklist__card-text">
-                    We deeply clean all surfaces using safe detergents.
-                </p>
+            <article class="checklist__card checklist__card--scrub">
+                <p class="checklist__card-title">Scrub</p>
+
+                <div class="checklist__text-button-wrapper">
+                    <p class="checklist__card-text">
+                        We deeply clean all surfaces using safe detergents.
+                    </p>
+
+                    <button class="toggle-btn" id="toggleBtn" aria-label="Toggle plus minus">
+                        <span class="toggle-btn__line toggle-btn__line--vertical"></span>
+                        <span class="toggle-btn__line toggle-btn__line--horizontal"></span>
+                    </button>
+                </div>
+
                 <ul class="checklist__list">
                     <li>Stovetop;</li>
                     <li>Wall behind stovetop;</li>
@@ -75,13 +120,22 @@
                     <li>Heavy scrub of bathtub/shower/ tiles/sinks;</li>
                     <li>Stain removal.</li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="checklist__card checklist__card--before-leave">
-                <h2 class="checklist__card-title">Before We Leave</h2>
-                <p class="checklist__card-text">
-                    You return to a perfectly clean and beautiful home or office.
-                </p>
+            <article class="checklist__card checklist__card--before-leave">
+                <p class="checklist__card-title">Before We Leave</p>
+
+                <div class="checklist__text-button-wrapper">
+                    <p class="checklist__card-text">
+                        You return to a perfectly clean and beautiful home or office.
+                    </p>
+
+                    <button class="toggle-btn" id="toggleBtn" aria-label="Toggle plus minus">
+                        <span class="toggle-btn__line toggle-btn__line--vertical"></span>
+                        <span class="toggle-btn__line toggle-btn__line--horizontal"></span>
+                    </button>
+                </div>
+                
                 <ul class="checklist__list">
                     <li>Change bedding & make beds;</li>
                     <li>Return supplies;</li>
@@ -89,7 +143,7 @@
                     <li>Turn off lights & NC unit;</li>
                     <li>Offer walk-through (if applicable).</li>
                 </ul>
-            </div>
+            </article>
         </div>
     </div>
 </section>

@@ -1,0 +1,125 @@
+.checklist {
+    .checklist__title {
+        font-weight: 500 bold;
+        font-size: 14px;
+        text-align: center;
+        color: var(--tertiary-heading-color);
+    }
+
+    .checklist__description-title {
+        font-weight: bold;
+        font-size: 44px;
+        color: var(--primary-heading-color);
+        text-align: center;
+    }
+
+    .checklist__text {
+        font-size: 19px;
+        text-align: center;
+        color: var(--primary-paragraph-color);
+    }
+
+    .checklist__collection {
+        padding: 24px;
+        display: grid;
+        gap: 5px;
+
+        .checklist__card-title {
+            color: var(--tertiary-heading-color);
+            font-size: 22px;
+            font-family: "Poppins", sans-serif;
+            font-weight: bold;
+        }
+
+        .checklist__card {
+            border: 1px solid var(--primary-paragraph-color);
+            padding: 5px;
+
+            .divider {
+                display: flex;
+            }
+
+            .divider__wrapper {
+                display: flex;
+                align-items: center;
+            }
+
+            .divider__svg {
+                width: 15%;
+                height: auto;
+            }
+
+            .divider__line {
+                fill: none;
+                stroke: var(--accent-paragraph-color);
+                stroke-width: 3px;
+            }
+
+            .checklist__list {
+                color: var(--primary-paragraph-color);
+                padding: 24px;
+                font-size: 14px;
+            }
+
+            .checklist__text-button-wrapper {
+                display: flex;
+                flex-direction: row;
+
+                .checklist__card-text {
+                    color: var(--primary-paragraph-color);
+                    font-size: 17px;
+                }
+
+                .toggle-btn {
+                    position: relative;
+                    width: 15px;
+                    height: 15px;
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    padding: 0;
+                    margin: 20px;
+                }
+
+                .toggle-btn__line {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 15px;
+                    height: 2px;
+                    background-color: var(--primary-paragraph-color);
+                    transform: translate(-50%, -50%);
+                    transition: transform 0.3s ease;
+                }
+
+                .toggle-btn__line--vertical {
+                    transform: translate(-50%, -50%) rotate(0deg);
+                }
+
+                .toggle-btn__line--horizontal {
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+
+                .toggle-btn.active .toggle-btn__line--vertical {
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+            }
+        }
+
+        .checklist__card--dust-floors {
+            background-image: url("../img/checklist/card1.svg");
+        }
+
+        .checklist__card--wipe-down {
+            background-image: url("../img/checklist/card2.svg");
+        }
+
+        .checklist__card--scrub {
+            background-image: url("../img/checklist/card3.svg");
+        }
+
+        .checklist__card--before-leave {
+            background-image: url("../img/checklist/card4.svg");
+        }
+    }
+}
