@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+<<<<<<< HEAD
 @import url("index.work.css");
 @import url("contact-banner.css");
 @import url("special-offers.css");
@@ -10,36 +11,51 @@
 html {
   font-family: "Open Sans", sans-serif;
 }
+=======
+>>>>>>> 7523a437f10fa2ff84e988eb2d9e8cfc8e34f7b2
 
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 
+
 :root {
-  --primary-heading-color: #316ccd;
-  --secondary-heading-color: #ffffff;
-  --tertiary-heading-color: #3c3c3c;
+    --primary-heading-color: #316ccd;
+    --secondary-heading-color: #ffffff;
+    --tertiary-heading-color: #3c3c3c;
+    --modal-heading-color: #316ccd; 
+    --modal-subheading-color: #848484; 
+    
+    --primary-paragraph-color: #848484;
+  --secondary-paragraph-color: #B4B4B4;
+    --accent-paragraph-color: #90c43f;
+    --footer-paragraph-color: rgb(211, 211, 211);
 
-  --primary-paragraph-color: #848484;
-  --accent-paragraph-color: #90c43f;
+    --primary-button-color: #fcd700;
+    --secondary-button-color: #316ccd;
+  --footer-form-color: #424242;
+    --modal-button-color: #316ccd; 
 
-  --primary-button-color: #fcd700;
-  --secondary-button-color: #316ccd;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #f4f4f4;
+    --accent-background-color: #316ccd;
+    --footer-background-color: #3c3c3c;
+      --input-background-color: #f8f9fa; 
+    --input-border-color: #dee2e6; 
 
-  --primary-background-color: #ffffff;
-  --secondary-background-color: #f4f4f4;
-  --accent-background-color: #316ccd;
-  --footer-background-color: #3c3c3c;
+    --primary-link-color: #ffffff;
+    --secondary-link-color: #1e61f9;
+  --tertiary-link-color: #676A73;
 
-  --primary-link-color: #ffffff;
-  --secondary-link-color: #1e61f9;
-
-  --lower-text-work-color: #bfc6d2;
-  --lower-subtitle-work-color: #fafcfe;
+    --lower-text-work-color: #bfc6d2;
+    --lower-subtitle-work-color: #fafcfe;
+    
+    font-family: "Open Sans", sans-serif;
 }
 
 h1,
@@ -48,14 +64,24 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Poppins, sans-serif;
+    font-family: Poppins, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 
 .w-section {
-  padding: 120px 0;
-  .w-section__inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+    padding: 120px 0;
+    .w-section__inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }

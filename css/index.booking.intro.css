@@ -1,0 +1,188 @@
+/* I redid it, now first mobile styles without queries */
+.booking-intro-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    color: var(--tertiary-heading-color);
+    overflow: hidden;
+    padding: 50px 0;
+    background: var(--secondary-background-color) url("../img/booking-intro/booking-intro-bg-desktop.png") no-repeat 49% 48.84% / cover;
+}
+.booking-intro__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.booking-intro__header {
+    margin-bottom: 30px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.booking-intro__footer {
+    max-width: 100%;
+    text-align: center;
+}
+
+.booking-intro__subheading {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-paragraph-color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.booking-intro__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--primary-heading-color);
+    margin-bottom: 0;
+}
+
+.booking-intro__title-line {
+    display: block;
+}
+
+.booking-intro__description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: var(--primary-paragraph-color);
+}
+
+.booking-intro__actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* I slightly redesigned the button because I didn't like the animation and it didn't look like the original. */
+.booking-intro__button {
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.booking-intro__button--primary {
+    background-color: var(--primary-button-color);
+    color: var(--tertiary-heading-color);
+}
+
+.booking-intro__button--primary:hover {
+    background-color: var(--footer-background-color);
+    color: var(--secondary-heading-color);
+}
+
+.booking-intro__button--link {
+    background-color: transparent;
+    color: var(--secondary-button-color);
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.booking-intro__button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* For desktop*/
+@media (min-width: 768px) {
+    .booking-intro-section {
+        min-height: 80vh;
+        padding: 80px 0;
+        background: var(--secondary-background-color) url("../img/booking-intro/booking-intro-bg-desktop.png") no-repeat 49% 100% / cover;
+    }
+
+    .booking-intro__title {
+        font-size: 60px;
+    }
+
+    .booking-intro__description {
+        font-size: 18px;
+    }
+
+    .booking-intro__header,
+    .booking-intro__footer {
+        text-align: left;
+    }
+
+    .booking-intro__actions {
+        justify-content: flex-start;
+    }
+}
+
+/* large monitors */
+@media (min-width: 1200px) {
+
+    .booking-intro__header,
+    .booking-intro__footer {
+        max-width: 50%;
+    }
+
+    .booking-intro__footer {
+        max-width: 450px;
+    }
+}
+
+.modal-title.h4 {
+    color: var(--modal-subheading-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.modal-title.fw-bold {
+    color: var(--modal-heading-color);
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: Poppins, sans-serif;
+}
+
+.modal-body p {
+    color: var(--modal-subheading-color);
+}
+
+.form-floating .form-control {
+    border-radius: 10px;
+    background-color: var(--input-background-color);
+    border-color: var(--input-border-color);
+}
+
+.form-floating label {
+    color: var(--modal-subheading-color);
+}
+
+.btn-primary {
+    background-color: var(--modal-button-color);
+    border-color: var(--modal-button-color);
+    font-family: Poppins, sans-serif;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-background-color);
+    border-color: var(--accent-background-color);
+}
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 600px;
+    }
+}

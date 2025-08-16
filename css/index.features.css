@@ -1,0 +1,137 @@
+.features {
+  padding: 90px 30px;
+  background-color: var(--secondary-background-color);
+}
+
+.features__container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.features__content {
+  text-align: left;
+  padding: 30 90px;
+}
+
+.features__label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--tertiary-heading-color);
+  margin-bottom: 8px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.features__title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--primary-heading-color); 
+  margin-bottom: 16px;
+}
+
+.features__description {
+  font-size: 19px;
+  color: var(--primary-paragraph-color);
+  margin-bottom: 24px;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.features__item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.features__icon-bg {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary-button-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__icon {
+  width: 26px;
+}
+
+.features__text {
+  flex: 1;
+}
+
+.features__item-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--tertiary-heading-color);
+}
+
+.features__item-description {
+  font-size: 19px;
+  color: var(--primary-paragraph-color);
+  line-height: 1.4;
+  font-family: "Open Sans", sans-serif;
+}
+
+.features__image-item {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.features__image {
+  display: block;
+  width: 100vw; 
+  height: auto;
+  object-fit: cover;
+}
+
+
+@media (min-width: 768px) {
+  .features {
+    padding: 80px 0;
+  }
+
+  .features__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 0; 
+    width: 100%;
+  }
+
+  .features__content {
+    padding-left: 80px; 
+    padding-right: 40px; 
+  }
+
+  .features__image-item {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .features__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+

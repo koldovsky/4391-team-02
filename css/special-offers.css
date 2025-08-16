@@ -1,7 +1,2 @@
-.special-offers {
-  .special-offers__title {
-    color: var(--primary-heading-color);
-    font-weight: 700;
-    font-size: 68px;
-  }
-}
+@import url("global.css");
+@import url("special-offers.special-offers.css");
