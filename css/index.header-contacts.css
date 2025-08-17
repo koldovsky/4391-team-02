@@ -1,5 +1,8 @@
 /* Topbar (BEM) */
 .topbar {
+  @media (max-width: 600px) {
+    display: none;
+  }
   background-color: var(--secondary-background-color);
   font-size: 15px;
   font-family: var(--font-family);
