@@ -1,32 +1,67 @@
-.contacts{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: var(--secondary-background-color);
-    color: var(--accent-paragraph-color);
-    font-weight: bold;
+/* Topbar (BEM) */
+.topbar {
+  background-color: var(--secondary-background-color);
+  font-size: 15px;
+  font-family: var(--font-family);
 }
 
-.flex-container{
-    display: flex;
+.topbar__inner {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
 }
 
-.contacts__list{
-    display: flex;         /* Вмикає режим Flexbox */
-    list-style: none;
-    padding: 0;            /* Прибирає внутрішній відступ у <ul> */
-    margin: 0;             /* Прибирає зовнішній відступ у <ul> */
-    gap: 20px;
+.topbar__email {
+  color: var(--accent-paragraph-color);
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+
 }
 
-.contacts__email-link{
-    text-align: center;
+.topbar__phones {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.flex-container-mail a{
-    color: var(--accent-paragraph-color);
-    margin-right: 300px;
+.topbar__phone-item {
+  white-space: nowrap;
 }
 
-.flex-container-phones{
-    text-align: right;
+.topbar__label {
+  color: var(--accent-paragraph-color);
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.topbar__phone-link {
+  color: var(--tertiary-link-color);
+  text-decoration: none;
+}
+
+.topbar__email:hover,
+.topbar__phone-link:hover {
+  text-decoration: underline;
+}
+
+/* Мобільна адаптація */
+@media (max-width: 640px) {
+  .topbar__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .topbar__phones {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
 }
