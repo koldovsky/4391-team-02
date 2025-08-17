@@ -1,6 +1,8 @@
 /* Danylo Skazin */
 .offers {
+  background-color: var(--secondary-background-color);
   .offers__title-container {
+    text-align: center;
     .offers__main-title {
       font-size: 14px;
       font-weight: 700;
@@ -10,11 +12,20 @@
       font-size: 50px;
       font-weight: 700;
       color: var(--primary-heading-color);
+      margin: 20px 0;
     }
     .offers__description {
       font-size: 19px;
       font-weight: 500;
       color: var(--primary-paragraph-color);
+    }
+  }
+  .offers__cards-container {
+    display: flex;
+    margin: 50px 0;
+    .offers__card {
+      background-color: #fff;
+      display: flex;
     }
   }
 }

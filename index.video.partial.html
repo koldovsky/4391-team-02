@@ -1,21 +1,94 @@
 <!-- Stefania -->
-<section class="cleaning-video">
-  <div class="cleaning-video__contents">
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+  crossorigin="anonymous"
+/>
+<section class="cleaning-video" id="cleaning-video__container">
+  <div class="cleaning-video__contents container">
     <h2 class="cleaning-video__title">VIDEO</h2>
     <p class="cleaning-video__subtitle">Professional Cleaning Service</p>
-    <button class="cleaning-video__button">Watch Now</button>
-  </div>
-  <div class="cleaning-video__embed">
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/tZqCwYC1d4E?si=0MI0VtbL1EtUF5cq"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
+    <button
+      class="cleaning-video__button"
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#cleaning-video__modal"
     >
-    </iframe>
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 50 50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="25" cy="25" r="25" fill="#90c43f" />
+        <polygon points="20,17 32,25 20,33" fill="white" />
+      </svg>
+      Watch Now
+    </button>
+    <div
+      class="modal fade"
+      id="cleaning-video__modal"
+      tabindex="-1"
+      aria-labelledby="cleaning-video__modal-heading"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="cleaning-video__modal-heading">
+              PROFESSIONAL CLEANING SERVICE
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="cleaning-video__embed">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/tZqCwYC1d4E?si=0MI0VtbL1EtUF5cq"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-close-custom"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"
+      ></script>
+      <!-- AUTOMATICALLY STOP PLAYING VIDEO-->
+      <script>
+        const modal = document.getElementById("cleaning-video__modal");
+        const iframe = modal.querySelector("iframe");
+        const src = iframe.src;
+
+        modal.addEventListener("hidden.bs.modal", () => {
+          iframe.src = "";
+          iframe.src = src;
+        });
+      </script>
+    </div>
   </div>
 </section>

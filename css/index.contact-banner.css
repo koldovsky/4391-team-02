@@ -1,0 +1,43 @@
+.contact-banner {
+  background-image: 
+    linear-gradient(
+      color-mix(in srgb, var(--accent-paragraph-color) 98%, transparent)
+    ),
+    url("../img/contact-banner/contact-banner-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  padding: 110px 0 115px; 
+}
+
+.contact-banner__title {
+  font-size: clamp(28px, 5vw, 50px); 
+  font-weight: 700;
+  color: var(--secondary-heading-color);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25px;
+}
+
+.contact-banner__phone-number {
+  font-size: clamp(32px, 7vw, 64px); 
+  font-weight: 900; 
+  color: var(--secondary-heading-color);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.contact-banner__phone-number:hover {
+  text-decoration: underline;
+}
+
+.contact-banner__note {
+  font-size: clamp(16px, 1.1vw, 18px); 
+  color: var(--secondary-background-color);
+  font-style: oblique;
+  margin-top: 10px;
+}
