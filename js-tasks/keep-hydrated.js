@@ -4,3 +4,9 @@
 function litres(time) {
   return Math.floor(time * 0.5);
 }
+
+//Stefania
+function litres(time) {
+  const totalLitres = Math.floor(0.5 * time);
+  return totalLitres;
+}
