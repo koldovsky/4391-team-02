@@ -16,3 +16,12 @@ function greet(name, owner) {
     return "Hello guest";
   }
 }
+
+//Mykhailo Vasilyev
+function greet(name, owner) {
+  if (name === owner) {
+    return 'Hello boss';
+  } else {
+    return 'Hello guest';
+  }
+}
