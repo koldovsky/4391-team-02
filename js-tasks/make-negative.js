@@ -7,3 +7,14 @@ function makeNegative(num) {
   }
   return num;
 }
+
+//Stefania
+function makeNegative(num) {
+  let finalNum = 0;
+  if (num > 0) {
+    finalNum = num * -1;
+  } else if (num < 0) {
+    finalNum = num;
+  }
+  return finalNum;
+}
