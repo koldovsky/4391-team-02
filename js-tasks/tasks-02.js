@@ -23,10 +23,15 @@ var max = function (list) {
   return list[list.length - 1];
 };
 
-
-
+// https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 function min(arr, toReturn) {
   const minValue = Math.min(...arr);
+
   if (toReturn === "index") return arr.indexOf(minValue);
   return minValue;
+}
+
+// https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
+function doubleInteger(i) {
+  return i * 2;
 }
