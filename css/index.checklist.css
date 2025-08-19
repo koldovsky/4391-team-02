@@ -1,8 +1,12 @@
 .checklist {
-    padding: 90px 0px;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
 
     .checklist__header {
-        padding: 0px 24px;
+        padding: 120px 0px 30px;
 
         .checklist__title {
             font-weight: 600;
@@ -28,7 +32,7 @@
     }
 
     .checklist__content {
-        padding: 0px 30px;
+        padding: 30px 50px 120px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
@@ -82,9 +86,15 @@
                 }
 
                 .checklist__text-button-wrapper {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
                     .checklist__card-text {
                         color: var(--primary-paragraph-color);
                         font-size: 17px;
+                        flex: 1 1 auto;
+                        margin: 0;
                     }
 
                     .accordion {
@@ -97,17 +107,6 @@
                         transition: 0.4s;
                     }
 
-                    .panel {
-                        max-height: 0;
-                        overflow: hidden;
-                        transition: max-height 0.35s ease-out;
-                        transform: translateY(0.4em);
-
-                        .checklist__list {
-                            color: var(--primary-paragraph-color);
-                        }
-                    }
-
                     .toggle-btn {
                         position: relative;
                         width: 15px;
@@ -117,6 +116,7 @@
                         border: 0;
                         padding: 0;
                         outline: none;
+                        flex: 0 0 auto;
                     }
 
                     .toggle-btn__line {
@@ -148,47 +148,76 @@
                         transform: translate(-50%, -50%) scaleY(0);
                     }
                 }
-            }
 
+                .panel {
+                    margin-top: 15px;
+                    width: 100%;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 0.3s ease-out;
+
+                    .checklist__list {
+                        color: var(--primary-paragraph-color);
+                        transform: translateY(-10px);
+                        opacity: 0;
+                        transition: transform 0.3s ease, opacity 0.3s ease;
+                    }
+                }
+
+                .panel.active {
+                    .panel.active {
+                        max-height: 500px;
+                    }
+                }
+
+                .panel.active .checklist__list {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
 
             .checklist__card:nth-child(1) {
                 grid-column: 2;
-                /* Second column, first row */
                 grid-row: 1;
             }
 
             .checklist__card:nth-child(2) {
                 grid-column: 3;
-                /* Third column, first row */
                 grid-row: 1;
             }
 
             .checklist__card:nth-child(3) {
                 grid-column: 2;
-                /* Second column, second row */
                 grid-row: 2;
             }
 
             .checklist__card:nth-child(4) {
                 grid-column: 3;
-                /* Third column, second row */
                 grid-row: 2;
             }
 
             .checklist__card--dust-floors {
-                background-image: url("../img/checklist/card1.svg") 50% 50% / cover no-repeat;
+                background-image: url("../img/checklist/card1.svg");
+                background-size: 100%;
+                background-repeat: no-repeat;
             }
 
             .checklist__card--wipe-down {
-                background-image: url("../img/checklist/card2.svg") 50% 50% / cover no-repeat;
+                background-image: url("../img/checklist/card2.svg");
+                background-size: 100%;
+                background-repeat: no-repeat;
             }
 
             .checklist__card--scrub {
-                background-image: url("../img/checklist/card3.svg") 50% 50% / cover no-repeat;
+                background-image: url("../img/checklist/card3.svg");
+                background-size: 100%;
+                background-repeat: no-repeat;
             }
 
             .checklist__card--before-leave {
-                background-image: url("../img/checklist/card4.svg") 50% 50% / cover no-repeat;
+                background-image: url("../img/checklist/card4.svg");
+                background-size: 100%;
+                background-repeat: no-repeat;
             }
         }
     }
