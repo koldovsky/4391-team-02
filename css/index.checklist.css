@@ -1,10 +1,4 @@
 .checklist {
-    max-width: 1300px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
-
     .checklist__header {
         padding: 120px 0px 30px;
 
@@ -58,6 +52,7 @@
                 color: var(--tertiary-heading-color);
                 font-size: 22px;
                 font-weight: bold;
+                margin-bottom: 0px;
             }
 
             .checklist__card {
@@ -78,7 +73,7 @@
                 }
 
                 .divider--full-width .divider__svg {
-                    width: 25%;
+                    width: 15%;
                 }
 
                 .divider__path--green {
@@ -86,6 +81,7 @@
                 }
 
                 .checklist__text-button-wrapper {
+                    margin-top: 15px;
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
