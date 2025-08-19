@@ -9,18 +9,24 @@ function DNAtoRNA(dna) {
 }
 
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
-var min = function(list) {
-  list.sort(function(a, b) {
+var min = function (list) {
+  list.sort(function (a, b) {
     return a - b;
   });
   return list[0];
 };
 
-var max = function(list) {
-  list.sort(function(a, b) {
+var max = function (list) {
+  list.sort(function (a, b) {
     return a - b;
   });
   return list[list.length - 1];
 };
 
 
+
+function min(arr, toReturn) {
+  const minValue = Math.min(...arr);
+  if (toReturn === "index") return arr.indexOf(minValue);
+  return minValue;
+}
