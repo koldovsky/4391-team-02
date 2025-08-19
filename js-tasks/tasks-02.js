@@ -61,3 +61,8 @@ function getRealFloor(n) {
 function past(h, m, s) {
   return 1000 * (h * 3600 + m * 60 + s);
 }
+
+// https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
+function isDivisible(n, x, y) {
+  return n % x == 0 && n % y == 0;
+}
