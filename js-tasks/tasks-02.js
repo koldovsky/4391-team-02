@@ -35,3 +35,11 @@ function min(arr, toReturn) {
 function doubleInteger(i) {
   return i * 2;
 }
+
+// https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  const ageDifference = dadYearsOld - sonYearsOld;
+  const years = ageDifference - sonYearsOld;
+
+  return years < 0 ? -years : years;
+}
