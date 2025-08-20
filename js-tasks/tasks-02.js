@@ -9,18 +9,14 @@ function DNAtoRNA(dna) {
 }
 
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
-var min = function (list) {
-  list.sort(function (a, b) {
-    return a - b;
-  });
+let min = function (list) {
+  list.sort((a, b) => a - b);
   return list[0];
 };
 
-var max = function (list) {
-  list.sort(function (a, b) {
-    return a - b;
-  });
-  return list[list.length - 1];
+let max = function (list) {
+  list.sort((a, b) => b - a);
+  return list[0];
 };
 
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
@@ -64,5 +60,5 @@ function past(h, m, s) {
 
 // https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
 function isDivisible(n, x, y) {
-  return n % x == 0 && n % y == 0;
+  return n % x === 0 && n % y === 0;
 }
