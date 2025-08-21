@@ -18,4 +18,3 @@ function giveMeFive(obj) {
     }
     return array;
 }
-
