@@ -1,5 +1,6 @@
 .benefits {
   background-color: var(--primary-background-color);
+  padding: 120px;
   .benefits__content {
     display: flex;
     flex-direction: column;
