@@ -4,45 +4,44 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* outline: 1px solid red; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
-
 :root {
-    --primary-heading-color: #316ccd;
-    --secondary-heading-color: #ffffff;
-    --tertiary-heading-color: #3c3c3c;
-    --modal-heading-color: #316ccd; 
-    --modal-subheading-color: #848484; 
-    
-    --primary-paragraph-color: #848484;
-  --secondary-paragraph-color: #B4B4B4;
-    --accent-paragraph-color: #90c43f;
-    --footer-paragraph-color: rgb(211, 211, 211);
+  --primary-heading-color: #316ccd;
+  --secondary-heading-color: #ffffff;
+  --tertiary-heading-color: #3c3c3c;
+  --modal-heading-color: #316ccd;
+  --modal-subheading-color: #848484;
 
-    --primary-button-color: #fcd700;
-    --secondary-button-color: #316ccd;
+  --primary-paragraph-color: #848484;
+  --secondary-paragraph-color: #b4b4b4;
+  --accent-paragraph-color: #90c43f;
+  --footer-paragraph-color: rgb(211, 211, 211);
+
+  --primary-button-color: #fcd700;
+  --secondary-button-color: #316ccd;
   --footer-form-color: #424242;
-    --modal-button-color: #316ccd; 
+  --modal-button-color: #316ccd;
 
-    --primary-background-color: #ffffff;
-    --secondary-background-color: #f4f4f4;
-    --accent-background-color: #316ccd;
-    --footer-background-color: #3c3c3c;
-      --input-background-color: #f8f9fa; 
-    --input-border-color: #dee2e6; 
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f4f4f4;
+  --accent-background-color: #316ccd;
+  --footer-background-color: #3c3c3c;
+  --input-background-color: #f8f9fa;
+  --input-border-color: #dee2e6;
 
-    --primary-link-color: #ffffff;
-    --secondary-link-color: #1e61f9;
-  --tertiary-link-color: #676A73;
+  --primary-link-color: #ffffff;
+  --secondary-link-color: #1e61f9;
+  --tertiary-link-color: #676a73;
 
-    --lower-text-work-color: #bfc6d2;
-    --lower-subtitle-work-color: #fafcfe;
-    
-    font-family: "Open Sans", sans-serif;
+  --lower-text-work-color: #bfc6d2;
+  --lower-subtitle-work-color: #fafcfe;
+
+  font-family: "Open Sans", sans-serif;
 }
 
 h1,
@@ -51,24 +50,24 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Poppins, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .w-section {
-    padding: 120px 0;
-    .w-section__inner {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
+  padding: 120px 0;
+  .w-section__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }

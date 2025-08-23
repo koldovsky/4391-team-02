@@ -11,6 +11,7 @@
   const startBtn = root.querySelector('[data-action="start"]');
 
   const rewardModal = root.querySelector('.game__modal[data-modal="reward"]');
+  rewardModal.querySelector(".game__modal-close").blur();
   const gameoverModal = root.querySelector(
     '.game__modal[data-modal="gameover"]'
   );
