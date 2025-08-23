@@ -1,0 +1,81 @@
+<!-- Block: game -->
+<div
+  class="game"
+  id="cleaning-game"
+  role="application"
+  aria-label="Cleaning Panda Runner"
+  data-discount-threshold="10"
+  data-max-discount="25"
+  data-discount-codes='["CLEAN5","CLEAN10","SPARKLE15","SHINE20","POLISH25"]'
+>
+  <div class="game__text">
+    <h2 class="game__title">GAME</h2>
+    <p class="game__subtitle">Play to earn a discount</p>
+  </div>
+  <!-- Visual play area -->
+  <div class="game__viewport" aria-hidden="true">
+    <div class="game__ground"></div>
+    <div class="game__player" aria-hidden="true">🐼</div>
+    <div class="game__obstacles" aria-hidden="true"></div>
+  </div>
+
+  <!-- HUD -->
+  <div class="game__hud">
+    <div class="game__score" aria-live="polite" aria-atomic="true">
+      Score: <span class="game__score-value">0</span>
+    </div>
+    <button
+      class="game__button game__button--primary"
+      data-action="start"
+      type="button"
+    >
+      Start
+    </button>
+  </div>
+
+  <!-- Reward modal -->
+  <dialog class="game__modal" data-modal="reward">
+    <div class="game__modal-body">
+      <button class="game__modal-close" data-action="close-gameover">
+        &times;
+      </button>
+      <h3 class="game__modal-title">You earned a discount!</h3>
+      <p class="game__modal-text">Use this code at checkout:</p>
+      <div class="game__coupon">
+        <span class="game__coupon-code">—</span>
+        <button
+          class="game__button game__button--ghost"
+          data-action="copy"
+          type="button"
+        >
+          Copy
+        </button>
+      </div>
+      <button class="game__button" data-action="close-reward" type="button">
+        Keep playing
+      </button>
+    </div>
+  </dialog>
+
+  <!-- Game over modal -->
+  <dialog class="game__modal" data-modal="gameover">
+    <div class="game__modal-body">
+      <button class="game__modal-close" data-action="close-gameover">
+        &times;
+      </button>
+      <h3 class="game__modal-title">Game over</h3>
+      <p class="game__modal-text">
+        Score: <span class="game__final-score">0</span>
+      </p>
+      <p class="game__modal-text">Get 10+ points to earn a discount!</p>
+      <button
+        class="game__button game__button--primary"
+        data-action="restart"
+        type="button"
+      >
+        Restart
+      </button>
+    </div>
+  </dialog>
+  <script src="js/game.js" defer></script>
+</div>
