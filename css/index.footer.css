@@ -1,5 +1,43 @@
 .footer {
   background-color: var(--footer-background-color);
+  .footer__clock-container {
+    .footer__clock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--primary-link-color);
+      font-size: 38px;
+      text-align: center;
+      padding-top: 30px;
+    }
+    .footer__clock-bar {
+      position: relative;
+      width: 115px;
+      height: 5px;
+      margin: 0 auto;
+
+      .footer__clock-bar-beckround {
+        width: 115px;
+        height: 6px;
+        background-color: var(--footer-paragraph-color);
+        margin: 10px auto;
+        margin-top: -5px;
+        border: none;
+        border-radius: 20px;
+      }
+      .footer__clock-bar-front {
+        position: absolute;
+        width: 0%;
+        height: 6px;
+        background-color: var(--accent-background-color);
+        margin: 10px auto;
+        margin-top: -16px;
+        border: none;
+        opacity: 1;
+        border-radius: 20px;
+      }
+    }
+  }
 
   .footer__top {
     .footer__logo-link {
@@ -14,7 +52,7 @@
         width: 100vw;
         max-width: 200px;
         min-width: 50px;
-        padding-top: 50px;
+        padding-top: 30px;
       }
     }
 
@@ -127,7 +165,7 @@
 
   .footer__lines {
     fill: none;
-    stroke: #316ccd;
+    stroke: var(--accent-background-color);
     stroke-width: 3px;
     height: 33px;
     width: 15%;
@@ -136,7 +174,7 @@
   .footer__line {
     width: 85%;
     height: 1px;
-    background-color: #9a9a9a;
+    background-color: var(--modal-subheading-color);
     margin: 20px auto;
     border: none;
   }
@@ -191,7 +229,6 @@
 
   @media (min-width: 768px) {
     .footer__container {
-      padding-top: 50px;
       padding-bottom: 15px;
       padding-right: 15px;
       padding-left: 15px;
