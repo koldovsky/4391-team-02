@@ -1,188 +1,288 @@
 /* I redid it, now first mobile styles without queries */
 .booking-intro-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    min-height: 80vh;
-    color: var(--tertiary-heading-color);
-    overflow: hidden;
-    padding: 50px 0;
-    background: var(--secondary-background-color) url("../img/booking-intro/booking-intro-bg-desktop.png") no-repeat 49% 48.84% / cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  color: var(--tertiary-heading-color);
+  overflow: hidden;
+  padding: 50px 0;
+  background: var(--secondary-background-color)
+    url("../img/booking-intro/booking-intro-bg-desktop.png") no-repeat 49%
+    48.84% / cover;
 }
 .booking-intro__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .booking-intro__header {
-    margin-bottom: 30px;
-    max-width: 100%;
-    text-align: center;
+  margin-bottom: 30px;
+  max-width: 100%;
+  text-align: center;
 }
 
 .booking-intro__footer {
-    max-width: 100%;
-    text-align: center;
+  max-width: 100%;
+  text-align: center;
 }
 
 .booking-intro__subheading {
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--primary-paragraph-color);
-    margin-bottom: 10px;
-    text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-paragraph-color);
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .booking-intro__title {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.1;
-    color: var(--primary-heading-color);
-    margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--primary-heading-color);
+  margin-bottom: 0;
 }
 
 .booking-intro__title-line {
-    display: block;
+  display: block;
 }
 
 .booking-intro__description {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-    color: var(--primary-paragraph-color);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: var(--primary-paragraph-color);
 }
 
 .booking-intro__actions {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 /* I slightly redesigned the button because I didn't like the animation and it didn't look like the original. */
 .booking-intro__button {
-    padding: 15px 40px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 26px 46px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .booking-intro__button--primary {
-    background-color: var(--primary-button-color);
-    color: var(--tertiary-heading-color);
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-heading-color);
 }
 
 .booking-intro__button--primary:hover {
-    background-color: var(--footer-background-color);
-    color: var(--secondary-heading-color);
+  background-color: var(--footer-background-color);
+  color: var(--secondary-heading-color);
 }
 
 .booking-intro__button--link {
-    background-color: transparent;
-    color: var(--secondary-button-color);
-    display: flex;
-    align-items: center;
-    padding: 15px 0;
+  background-color: transparent;
+  color: var(--secondary-button-color);
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
 }
 
 .booking-intro__button-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 /* For desktop*/
 @media (min-width: 768px) {
-    .booking-intro-section {
-        min-height: 80vh;
-        padding: 80px 0;
-        background: var(--secondary-background-color) url("../img/booking-intro/booking-intro-bg-desktop.png") no-repeat 49% 100% / cover;
-    }
+  .booking-intro-section {
+    min-height: 80vh;
+    padding: 80px 0;
+    background: var(--secondary-background-color)
+      url("../img/booking-intro/booking-intro-bg-desktop.png") no-repeat 49%
+      100% / cover;
+  }
 
-    .booking-intro__title {
-        font-size: 60px;
-    }
+  .booking-intro__title {
+    font-size: 60px;
+  }
 
-    .booking-intro__description {
-        font-size: 18px;
-    }
+  .booking-intro__description {
+    font-size: 18px;
+  }
 
-    .booking-intro__header,
-    .booking-intro__footer {
-        text-align: left;
-    }
+  .booking-intro__header,
+  .booking-intro__footer {
+    text-align: left;
+  }
 
-    .booking-intro__actions {
-        justify-content: flex-start;
-    }
+  .booking-intro__actions {
+    justify-content: flex-start;
+  }
 }
 
 /* large monitors */
 @media (min-width: 1200px) {
+  .booking-intro__header,
+  .booking-intro__footer {
+    max-width: 50%;
+  }
 
-    .booking-intro__header,
-    .booking-intro__footer {
-        max-width: 50%;
-    }
-
-    .booking-intro__footer {
-        max-width: 450px;
-    }
+  .booking-intro__footer {
+    max-width: 450px;
+  }
+}
+.booking-intro__button--primary {
+  background-color: var(--primary-button-color);
+  color: var(--tertiary-heading-color);
+  border: none;
+  padding: 18px 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.modal-title.h4 {
-    color: var(--modal-subheading-color);
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 500;
+.booking-intro__button--primary:hover {
+  background-color: var(--tertiary-link-color);
+  color: var(--secondary-heading-color);
+  transform: translateY(-2px);
 }
 
-.modal-title.fw-bold {
-    color: var(--modal-heading-color);
-    font-size: 40px;
-    margin-bottom: 10px;
-    font-family: Poppins, sans-serif;
+.booking-intro__button--link {
+  color: var(--tertiary-link-color);
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
 }
 
-.modal-body p {
-    color: var(--modal-subheading-color);
+.booking-intro__button--link:hover {
+  color: var(--accent-paragraph-color);
 }
 
-.form-floating .form-control {
-    border-radius: 10px;
-    background-color: var(--input-background-color);
-    border-color: var(--input-border-color);
+.modal-intro {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-intro.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-intro-content {
+  background: var(--primary-background-color);
+  border-radius: 18px;
+  padding: 50px 45px;
+  max-width: 800px;
+  min-height: 700px;
+  width: 100%;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: modalFadeIn 0.35s ease;
+  position: relative;
+}
+
+.btn-close {
+  position: absolute;
+  top: 22px;
+  right: 26px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: var(--secondary-paragraph-color);
+}
+
+.btn-close:hover {
+  color: var(--accent-paragraph-color);
+}
+
+.modal-intro-subheading {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--modal-intro-subheading-color);
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.modal-intro-heading {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--primary-heading-color);
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.modal-intro-description {
+  font-size: 18px;
+  color: var(--primary-paragraph-color);
+  margin-bottom: 35px;
+}
+
+.form-control {
+  background: var(--input-background-color);
+  border: 1px solid var(--input-border-color);
+  border-radius: 12px;
+  padding: 16px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 22px;
 }
 
 .form-floating label {
-    color: var(--modal-subheading-color);
+  color: var(--secondary-paragraph-color);
+  font-size: 14px;
 }
 
-.btn-primary {
-    background-color: var(--modal-button-color);
-    border-color: var(--modal-button-color);
-    font-family: Poppins, sans-serif;
+.modal-intro-submit-btn {
+  background: var(--modal-heading-color);
+  color: var(--secondary-heading-color);
+  border: none;
+  border-radius: 12px;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%;
 }
 
-.btn-primary:hover {
-    background-color: var(--accent-background-color);
-    border-color: var(--accent-background-color);
+.modal-intro-submit-btn:hover {
+  background: var(--tertiary-link-color);
+  color: var(--secondary-heading-color);
+  transform: translateY(-2px);
 }
 
-.modal-dialog {
-    max-width: 600px;
-}
+@keyframes modalFadeIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
 
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 600px;
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
