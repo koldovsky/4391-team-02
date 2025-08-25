@@ -86,17 +86,17 @@
                 padding: 0 15px;
                 flex: 1;
                 display: grid;
-                gap: 15px;
+                gap: 15px 0;
 
                 @media (min-width: 1280px) {
                     width: 400px;
                 }
 
-                @media (min-width: 992px) {
-                    gap: 10px;
+                @media (max-width: 992px) {
+                    gap: 10px 0;
                 }
 
-                @media (min-width: 470px) {
+                @media (max-width: 470px) {
                     gap: 0px;
                 }
 
