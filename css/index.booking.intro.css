@@ -138,114 +138,51 @@
     }
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  z-index: 1050;
-}
-
-.modal.is-open {
-  visibility: visible;
-  opacity: 1;
-}
-
-.modal__dialog {
-  position: relative;
-  width: 90%;
-  max-width: 600px;
-  margin: 1.75rem auto;
-  transform: translateY(-50px);
-  transition: transform 0.3s ease;
-}
-
-.modal.is-open .modal__dialog {
-  transform: translateY(0);
-}
-
-.modal__content {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.modal__close-btn {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  font-weight: 300;
-  color: #aaa;
-  cursor: pointer;
-  line-height: 1;
-  transition: color 0.2s ease;
-}
-
-.modal__close-btn:hover {
-  color: #000;
-}
-
-.modal__body {
-  text-align: center;
-  padding-top: 20px;
-}
-
 .modal-title.h4 {
-  color: var(--modal-subheading-color);
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 0;
+    color: var(--modal-subheading-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .modal-title.fw-bold {
-  color: var(--modal-heading-color);
-  font-size: 30px;
-  margin-bottom: 10px;
-  font-family: Poppins, sans-serif;
-  line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .modal-title.fw-bold {
+    color: var(--modal-heading-color);
     font-size: 40px;
-  }
+    margin-bottom: 10px;
+    font-family: Poppins, sans-serif;
 }
 
 .modal-body p {
-  color: var(--modal-subheading-color);
+    color: var(--modal-subheading-color);
 }
 
 .form-floating .form-control {
-  border-radius: 10px;
-  background-color: var(--input-background-color);
-  border-color: var(--input-border-color);
+    border-radius: 10px;
+    background-color: var(--input-background-color);
+    border-color: var(--input-border-color);
 }
 
 .form-floating label {
-  color: var(--modal-subheading-color);
+    color: var(--modal-subheading-color);
 }
 
 .btn-primary {
-  background-color: var(--modal-button-color);
-  border-color: var(--modal-button-color);
-  font-family: Poppins, sans-serif;
+    background-color: var(--modal-button-color);
+    border-color: var(--modal-button-color);
+    font-family: Poppins, sans-serif;
 }
 
 .btn-primary:hover {
-  background-color: var(--accent-background-color);
-  border-color: var(--accent-background-color);
+    background-color: var(--accent-background-color);
+    border-color: var(--accent-background-color);
+}
+
+.modal-dialog {
+    max-width: 600px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 600px;
+    }
 }

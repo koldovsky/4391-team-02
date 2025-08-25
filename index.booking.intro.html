@@ -1,4 +1,5 @@
 <section class="booking-intro-section">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <div class="booking-intro__content">
     <div class="booking-intro__header">
       <p class="booking-intro__subheading">PROFESSIONAL CLEANING</p>
@@ -14,7 +15,8 @@
         cleaning professionals!
       </p>
       <div class="booking-intro__actions">
-        <a href="#" class="booking-intro__button booking-intro__button--primary js-open-modal">
+        <a href="#" class="booking-intro__button booking-intro__button--primary" data-bs-toggle="modal"
+          data-bs-target="#bookingModal">
           Book Now
         </a>
         <a href="tel:+12345678900" class="booking-intro__button booking-intro__button--link">
@@ -24,16 +26,15 @@
       </div>
     </div>
   </div>
-
-  <div class="modal js-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal__dialog">
-      <div class="modal__content">
-        <button type="button" class="modal__close-btn js-close-modal" aria-label="Close">
-          &times;
-        </button>
-        <div class="modal__body text-center">
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
           <div class="modal-title h4">CONTACTS</div>
-          <h2 id="modalTitle" class="modal-title fw-bold">Ready to Book? Fill out the Form!</h2>
+          <h2 class="modal-title fw-bold">Ready to Book? Fill out the Form!</h2>
           <p class="text-muted">We will contact you to specify the details.</p>
           <form class="mt-4">
             <div class="form-floating mb-3">
@@ -64,5 +65,6 @@
       </div>
     </div>
   </div>
-<script src="js/booking_intro.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </section>
