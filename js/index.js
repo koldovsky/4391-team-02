@@ -3,6 +3,7 @@ function init() {
   import("./video.js");
   import("./game.js");
   import("./checklist.js");
+  import("./footer.js");
 }
 
 const totalPartials = document.querySelectorAll(
