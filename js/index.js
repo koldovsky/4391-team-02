@@ -1,6 +1,7 @@
 function init() {
-    import("./game.js");
-    import("./video.js");
+  import("./booking-intro.js");
+  import("./video.js");
+  import("./game.js");
 }
 
 const totalPartials = document.querySelectorAll(
