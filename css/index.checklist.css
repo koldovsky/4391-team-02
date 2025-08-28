@@ -153,17 +153,23 @@
             transition: max-height 0.3s ease-out;
 
             .checklist__list {
+                list-style-type: disc;
+                list-style-position: outside;
+                margin: 0;
+                padding-left: 1.5rem;
                 color: var(--primary-paragraph-color);
                 transform: translateY(-10px);
                 opacity: 0;
                 transition: transform 0.3s ease, opacity 0.3s ease;
+
+                li {
+                    margin-bottom: 4px;
+                }
             }
         }
 
         .panel.active {
-            .panel.active {
-                max-height: 500px;
-            }
+            max-height: 500px;
         }
 
         .panel.active .checklist__list {
