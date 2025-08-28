@@ -2,6 +2,7 @@ function init() {
   import("./booking-intro.js");
   import("./video.js");
   import("./game.js");
+  import("./checklist.js");
 }
 
 const totalPartials = document.querySelectorAll(
