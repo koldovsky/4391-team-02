@@ -124,25 +124,12 @@
 .testimonials__button--prev { left: 10px; }
 .testimonials__button--next { right: 10px; }
 
-.js-arrows-s1, .js-arrows-s2 { display: none; }
-
-#slide1:checked ~ .testimonials__carousel .js-arrows-s1 { display: flex; }
-#slide2:checked ~ .testimonials__carousel .js-arrows-s2 { display: flex; }
-
-#slide1:checked ~ .testimonials__carousel .testimonials__track {
-  transform: translateX(0);
-}
-
-#slide2:checked ~ .testimonials__carousel .testimonials__track {
-  transform: translateX(-100%);
-}
-
 @media (max-width: 1199px) {
   .testimonials__button {
     background-color: var(--modal-button-color);
     color: var(--primary-background-color);
-    width: 3px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     font-size: 20px;
   }
