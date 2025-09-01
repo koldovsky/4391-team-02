@@ -108,7 +108,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 840px) {
   .header-bar__inner {
     grid-template-columns: 1fr auto;
     grid-template-areas:
