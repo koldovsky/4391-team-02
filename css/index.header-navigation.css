@@ -1,3 +1,4 @@
+/* Volodymyr Nos */
 .header-bar {
   background-color: var(--primary-background-color);
   border-bottom: 1px solid var(--border-soft);
@@ -33,7 +34,6 @@
   max-width: none;
   flex: 0 0 44px;
   object-fit: contain;
-  display: block;
 }
 
 .header-bar__title {
@@ -103,7 +103,9 @@
 
 /* responsive */
 @media (max-width: 900px) {
-  .header-bar__menu { gap: 24px; }
+  .header-bar__menu {
+    gap: 24px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -115,7 +117,31 @@
     row-gap: 8px;
   }
 
-  .header-bar__tagline { display: none; }
-  .header-bar__nav { justify-self: start; overflow-x: auto; }
-  .header-bar__menu { gap: 16px; padding-bottom: 4px; }
+  .header-bar__brand {
+    flex-shrink: 1;
+  }
+
+  .header-bar__logo {
+    width: 100%;
+    max-width: 164px;
+    height: auto;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+  
+  .header-bar__tagline {
+    display: none;
+  }
+  
+  .header-bar__nav {
+    justify-self: start;
+    overflow-x: hidden;
+  }
+
+  .header-bar__menu {
+    gap: 16px;
+    padding-bottom: 4px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+  }
 }

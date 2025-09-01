@@ -1,8 +1,5 @@
 /* Topbar (BEM) */
 .topbar {
-  @media (max-width: 600px) {
-    display: none;
-  }
   background-color: var(--secondary-background-color);
   font-size: 15px;
   font-family: var(--font-family);
@@ -23,7 +20,6 @@
   font-weight: bold;
   text-decoration: none;
   white-space: nowrap;
-
 }
 
 .topbar__phones {
@@ -55,16 +51,23 @@
   text-decoration: underline;
 }
 
-/* Мобільна адаптація */
 @media (max-width: 640px) {
   .topbar__inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px;
+    padding: 10px 20px; 
+  }
+
+  .topbar__email,
+  .topbar__phone-item {
+    white-space: normal; 
   }
 
   .topbar__phones {
-    gap: 12px;
-    flex-wrap: wrap;
+    gap: 10px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    width: 100%; 
   }
 }

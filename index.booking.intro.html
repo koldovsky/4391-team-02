@@ -1,5 +1,5 @@
 <section class="booking-intro-section">
-  <div class="booking-intro__content">
+  <div class="booking-intro__content" id="bookingIntroContent">
     <div class="booking-intro__header">
       <p class="booking-intro__subheading">PROFESSIONAL CLEANING</p>
       <h1 class="booking-intro__title">
@@ -33,6 +33,25 @@
       </div>
     </div>
   </div>
+  <div class="booking-intro__content" id="orderStatusContent" style="display: none;">
+    <div class="booking-intro__header">
+      <p class="booking-intro__subheading">ORDER STATUS</p>
+      <h1 class="booking-intro__title">
+        <span class="booking-intro__title-line" id="orderStatusText"></span>
+      </h1>
+    </div>
+    <div class="booking-intro__footer">
+      <div class="booking-intro__actions">
+        <button
+          class="booking-intro__button booking-intro__button--link"
+          id="cancelOrderBtn"
+        >
+          Cancel Order
+        </button>
+      </div>
+    </div>
+  </div>
+
   <div class="modal-intro" id="bookingIntroModal">
     <div class="modal-intro-dialog">
       <div class="modal-intro-content">
@@ -51,7 +70,7 @@
           <p class="modal-intro-description">
             We will contact you to specify the details.
           </p>
-          <form class="mt-4">
+          <form class="mt-4" id="bookingForm">
             <div class="form-floating mb-3">
               <input
                 type="text"
