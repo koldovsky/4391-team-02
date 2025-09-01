@@ -62,3 +62,32 @@ function past(h, m, s) {
 function isDivisible(n, x, y) {
   return n % x === 0 && n % y === 0;
 }
+
+// https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
+function DNAtoRNA(dna) {
+  return dna.replace(/[tT]/g, "U");
+}
+
+//https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
+function stringToArray(string){
+  return string.split(' ');
+}
+
+//https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
+let minNum = function(list) {
+  return Math.min(...list);
+}
+
+let maxNum = function(list) {
+  return Math.max(...list);
+}
+
+//https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
+function doubleInteger(i) {
+  return i *= 2;
+}
+
+https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld - sonYearsOld * 2);
+}
