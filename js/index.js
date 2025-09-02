@@ -4,6 +4,7 @@ function init() {
   import("./game.js");
   import("./checklist.js");
   import("./footer.js");
+  import("./contacts.js");
 }
 
 const totalPartials = document.querySelectorAll(
