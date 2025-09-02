@@ -9,9 +9,10 @@
     </header>
 
     <div class="testimonials__carousel">
+      <input type="radio" name="carousel" id="slide1" checked hidden>
+      <input type="radio" name="carousel" id="slide2" hidden>
       <div class="testimonials__track-container">
         <ul class="testimonials__track">
-          
           <li class="testimonials__slide">
             <figure>
               <img src="img/testimonials/testimonials-jesse-v.webp" alt="Photo of Jesse V., Chicago" class="testimonials__image" width="90" height="90">
@@ -22,7 +23,6 @@
               <time class="testimonials__date" datetime="2024-12-15">December 15, 2024</time>
             </figure>
           </li>
-
           <li class="testimonials__slide">
             <figure>
               <img src="img/testimonials/testimonials-jimmy-c.webp" alt="Photo of Jimmy C., NYC" class="testimonials__image" width="90" height="90">
@@ -33,11 +33,71 @@
               <time class="testimonials__date" datetime="2024-05-25">May 25, 2024</time>
             </figure>
           </li>
-
         </ul>
-        <button type="button" class="testimonials__button testimonials__button--next">&#10095;</button>
-        <button type="button" class="testimonials__button testimonials__button--prev">&#10094;</button>
+      </div>
+      <!-- Стрілки для циклічного перемикання -->
+      <label for="slide2" class="testimonials__button testimonials__button--next" id="next1">&#10095;</label>
+      <label for="slide2" class="testimonials__button testimonials__button--prev" id="prev1">&#10094;</label>
+      <label for="slide1" class="testimonials__button testimonials__button--next" id="next2">&#10095;</label>
+      <label for="slide1" class="testimonials__button testimonials__button--prev" id="prev2">&#10094;</label>
+      <!-- Крапочки -->
+      <div class="testimonials__dots">
+        <label for="slide1" class="testimonials__dot" id="dot1"></label>
+        <label for="slide2" class="testimonials__dot" id="dot2"></label>
       </div>
     </div>
+
   </div>
-</section>  
+</section>
+
+<section class="rating-section">
+  <div class="rating-content">
+    <!-- Ліва частина: рейтинг -->
+    <div class="rating-box">
+      <div class="rating-summary">
+        <div id="average-rating">0.0</div>
+        <div id="stars"></div>
+        <div id="total-votes">0 votes</div>
+      </div>
+
+      <div class="rating-bars">
+        <div class="bar-row">
+          <span>5 ★</span>
+          <div class="bar"><div class="fill" id="bar-5"></div></div>
+          <span id="count-5">0</span>
+        </div>
+        <div class="bar-row">
+          <span>4 ★</span>
+          <div class="bar"><div class="fill" id="bar-4"></div></div>
+          <span id="count-4">0</span>
+        </div>
+        <div class="bar-row">
+          <span>3 ★</span>
+          <div class="bar"><div class="fill" id="bar-3"></div></div>
+          <span id="count-3">0</span>
+        </div>
+        <div class="bar-row">
+          <span>2 ★</span>
+          <div class="bar"><div class="fill" id="bar-2"></div></div>
+          <span id="count-2">0</span>
+        </div>
+        <div class="bar-row">
+          <span>1 ★</span>
+          <div class="bar"><div class="fill" id="bar-1"></div></div>
+          <span id="count-1">0</span>
+        </div>
+      </div>
+
+      <div class="user-rating">
+        <p>Залишіть відгук:</p>
+        <div id="user-stars">★★★★★</div>
+      </div>
+    </div>
+
+    <div class="comment-box" id="comment-form" style="display: none;">
+      <h3>Ваш відгук</h3>
+      <textarea id="comment-text" placeholder="Напишіть ваш коментар..." rows="6"></textarea>
+      <button id="submit-comment">Відправити</button>
+    </div>
+  </div>
+</section>
