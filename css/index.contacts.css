@@ -26,12 +26,9 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  /* центруємо */
   width: 100vw;
-  /* саме ширина вікна, а не контейнера */
   max-width: 100vw;
   margin-bottom: 0;
-  /* щоб не з’являлась смуга знизу */
   overflow: visible;
 }
 
@@ -58,7 +55,6 @@
   color: var(--text-color);
   margin-bottom: 36px;
 }
-
 
 .contacts__list {
   display: flex;
@@ -124,7 +120,21 @@
   border: 0;
 }
 
-/* ===== DESKTOP (>= 600px) ===== */
+.contacts__status {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  padding-left: 15px;
+}
+
+.contacts__status--open {
+  color: green;
+}
+
+.contacts__status--closed {
+  color: red;
+}
 @media (min-width: 600px) {
   .contacts {
     padding-top: 0;
@@ -134,29 +144,28 @@
   .contacts__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* 50% / 50% */
     gap: 0;
     align-items: stretch;
     min-height: 560px;
-    /* або 70vh якщо треба по висоті */
   }
 
   .contacts__main {
     padding-top: 105px;
     padding-bottom: 105px;
-    padding-left: clamp(40px, 6vw, 80px); /* больше воздуха слева */
-    padding-right: clamp(10px, 2vw, 20px); /* почти нет справа → текст ближе к карте */
+    padding-left: clamp(40px, 6vw, 80px);
+    padding-right: clamp(10px, 2vw, 20px);
     box-sizing: border-box;
+
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contacts__map {
     position: static;
-    /* скидаємо мобільний relative */
     left: auto;
     transform: none;
-    /* скидаємо translateX */
     width: auto;
-    /* скидаємо 100vw */
     max-width: none;
     margin: 0;
     padding: 0;
@@ -164,11 +173,19 @@
     box-sizing: border-box;
   }
 
+  .contacts__status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+
   .contacts__map iframe {
     display: block;
     width: 100%;
     height: 100%;
-    /* карта на всю колонку */
     border: 0;
   }
 }

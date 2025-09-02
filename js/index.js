@@ -5,6 +5,7 @@ function init() {
   import("./checklist.js");
   import("./footer.js");
   import("./testimonials.js");
+  import("./contacts.js");
 }
 
 const totalPartials = document.querySelectorAll(
