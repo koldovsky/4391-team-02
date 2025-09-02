@@ -35,3 +35,5 @@ function applyContactsStatus(root = document) {
 }
 
 applyContactsStatus(document);
+
+window.applyContactsStatus = applyContactsStatus;
