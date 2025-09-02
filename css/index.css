@@ -3,7 +3,6 @@
 @import url("index.services.css");
 @import url("index.about.css");
 @import url("index.work.css");
-@import url("index.special-offers.css");
 @import url("index.offers.css");
 @import url("index.benefits.css");
 @import url("index.features.css");
@@ -18,3 +17,4 @@
 @import url("index.contacts.css");
 @import url("index.checklist.css");
 @import url("index.game.css");
+@import url("special-offers.css");

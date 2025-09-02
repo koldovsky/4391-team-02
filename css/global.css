@@ -10,6 +10,10 @@
   /* outline: 1px solid red; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-heading-color: #316ccd;
   --secondary-heading-color: #ffffff;
@@ -33,9 +37,6 @@
   --footer-background-color: #3c3c3c;
   --input-background-color: #f8f9fa;
   --input-border-color: #dee2e6;
-  
-  --status-open-color: #2ecc71;
-  --status-closed-color: #e74c3c;
 
   --primary-link-color: #ffffff;
   --secondary-link-color: #1e61f9;
