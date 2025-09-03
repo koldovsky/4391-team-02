@@ -5,6 +5,7 @@ function init() {
   import("./checklist.js");
   import("./footer.js");
   import("./testimonials.js");
+  import("./contact-banner.js");
   import("./contacts.js");
   import("./offers.js");
 }
