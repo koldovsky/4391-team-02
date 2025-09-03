@@ -8,6 +8,7 @@ function init() {
   import("./contact-banner.js");
   import("./contacts.js");
   import("./offers.js");
+  import("./work.js");
 }
 
 const totalPartials = document.querySelectorAll(

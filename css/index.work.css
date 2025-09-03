@@ -1,6 +1,7 @@
 /* Illia Stefanov */
 .work {
-  background: url("../img/textbackground/raw.svg") center/cover no-repeat fixed;
+  background: url("../img/textbackground/raw.svg") center/cover repeat;
+  background-attachment: fixed; 
   padding: 7em 4em;
   font-family: "Nunito", sans-serif;
   color: #dde5ed;
