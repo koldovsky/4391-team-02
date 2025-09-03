@@ -23,16 +23,29 @@
 }
 
 .contact-banner__phone-number {
-  font-size: clamp(32px, 7vw, 64px); 
-  font-weight: 900; 
-  color: var(--secondary-heading-color);
-  text-decoration: none;
+  font-size: clamp(32px, 7vw, 64px);
+  font-weight: 900;
+  color: transparent;
+
+  background-image: radial-gradient(
+    circle at 0% 50%,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.6) 15%,
+    rgba(0, 0, 0, 0.4) 30%,
+    #fff 70%
+  );
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
   display: inline-block;
-  margin-bottom: 20px;
 }
+
 
 .contact-banner__phone-number:hover {
   text-decoration: underline;
+  text-decoration-color: #fff;
 }
 
 .contact-banner__note {
