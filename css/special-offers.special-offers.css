@@ -5,6 +5,8 @@
   justify-content: center;
 
   .special-offers__title {
+    padding: 0 15px;
+
     width: 100%;
     background-color: var(--secondary-background-color);
     @media screen and (max-width: 768px) {
@@ -62,6 +64,7 @@
       align-items: center;
       justify-content: center;
       gap: 1rem;
+      padding: 0 15px;
 
       .special-offer__header {
         width: 100%;
@@ -76,6 +79,9 @@
             font-size: 3.5rem;
             font-weight: 700;
             text-align: center;
+            @media screen and (max-width: 768px) {
+              font-size: 1.5rem;
+            }
           }
 
           .special-offer__subtitle {
@@ -84,6 +90,9 @@
             font-weight: 700;
             text-align: center;
             margin-bottom: 1.5rem;
+            @media screen and (max-width: 768px) {
+              font-size: 0.9rem;
+            }
           }
         }
         .special-offer__image {
@@ -93,12 +102,19 @@
           max-height: 300px;
           object-fit: cover;
           border: 3px solid #e4e4e4;
+          @media screen and (max-width: 768px) {
+            max-height: 200px;
+            width: 100%;
+          }
         }
       }
       .special-offer__description {
         color: var(--tertiary-heading-color);
         font-size: 1.2rem;
         font-weight: 400;
+        @media screen and (max-width: 768px) {
+          font-size: 0.9rem;
+        }
       }
 
       .special-offer__btn {
@@ -108,6 +124,10 @@
         font-weight: 600;
         text-decoration: none;
         transition: background-color 0.3s ease, color 0.3s ease;
+        @media screen and (max-width: 768px) {
+          text-align: center;
+          width: 100%;
+        }
       }
 
       .special-offer__btn--primary {
@@ -127,13 +147,15 @@
   }
 
   .special-offer__form {
-    padding: 6rem 0;
-    width: 30%;
+    padding: 6rem 15px;
+    width: 100%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
 
     .special-offer__form-title {
       color: var(--primary-heading-color);
