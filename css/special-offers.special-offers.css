@@ -102,6 +102,7 @@
           max-height: 300px;
           object-fit: cover;
           border: 3px solid #e4e4e4;
+          border-radius: 10px;
           @media screen and (max-width: 768px) {
             max-height: 200px;
             width: 100%;
@@ -143,6 +144,13 @@
 
     &.dark-bg {
       background-color: var(--secondary-background-color);
+      .special-offer__container {
+        .special-offer__header {
+          .special-offer__image {
+            border-color: #fff;
+          }
+        }
+      }
     }
   }
 
@@ -155,7 +163,6 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-
 
     .special-offer__form-title {
       color: var(--primary-heading-color);

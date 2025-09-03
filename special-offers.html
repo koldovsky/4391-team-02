@@ -62,4 +62,9 @@
       data-hx-get="index.footer.partial.html"
     ></footer>
   </body>
+  <script>
+    document.body.addEventListener("htmx:afterOnLoad", () => {
+      import("./js/special-offers.js")
+    })
+  </script>
 </html>
