@@ -6,6 +6,7 @@ function init() {
   import("./footer.js");
   import("./testimonials.js");
   import("./contacts.js");
+  import("./offers.js");
 }
 
 const totalPartials = document.querySelectorAll(

@@ -1,31 +1,110 @@
-Danylo Skazin 
+/* Danylo Skazin  */
 .offers {
   background-color: var(--secondary-background-color);
+
   .offers__title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+
     .offers__main-title {
       font-size: 14px;
       font-weight: 700;
       color: var(--tertiary-heading-color);
+      letter-spacing: 1.4px;
+      line-height: 18.2px;
     }
     .offers__subtitle {
       font-size: 50px;
       font-weight: 700;
       color: var(--primary-heading-color);
       margin: 20px 0;
+      @media screen and (max-width: 768px) {
+        font-size: 30px;
+      }
     }
     .offers__description {
       font-size: 19px;
       font-weight: 500;
       color: var(--primary-paragraph-color);
+      letter-spacing: normal;
+      line-height: 31.35px;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
   .offers__cards-container {
-    display: flex;
-    margin: 50px 0;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+    gap: 30px;
+
     .offers__card {
       background-color: #fff;
+      width: 100%;
       display: flex;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .offers__image {
+        height: 100%;
+        width: 50%;
+        object-fit: cover;
+        object-position: center;
+        @media screen and (max-width: 768px) {
+          width: 100%;
+          max-height: 300px;
+          object-position: top;
+        }
+      }
+
+      .offers__text {
+        padding: 40px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .offers__text-title {
+          color: var(--tertiary-heading-color);
+          font-size: 22px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        .offers__text-description {
+          color: var(--primary-paragraph-color);
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 29.41px;
+        }
+        .offers__text-link-arrow {
+          text-decoration: none;
+          width: 100%;
+          font-family: "Open Sans", sans-serif;
+          color: var(--tertiary-link-color);
+          font-size: 13px;
+          font-weight: 700;
+          line-height: 17.29px;
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          margin-top: 40px;
+
+          &:hover {
+            color: var(--secondary-link-color);
+            text-decoration: underline;
+            transition: color 0.2s ease-in;
+          }
+        }
+      }
     }
   }
 }
