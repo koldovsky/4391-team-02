@@ -1,4 +1,3 @@
-// Початкові дані (сума = 34652)
 let ratings = {
   5: 28001,
   4: 6499,
@@ -50,11 +49,13 @@ document.getElementById("user-stars").addEventListener("click", (e) => {
   }
 });
 
-// Відправка коментаря
+const popup = document.getElementById("thankyou-popup");
+const closePopup = document.getElementById("close-popup");
+
 document.getElementById("submit-comment").addEventListener("click", () => {
   let text = document.getElementById("comment-text").value.trim();
   if (text) {
-    alert("Дякуємо за ваш відгук!\n\n" + text);
+    popup.classList.add("active"); 
 
     document.getElementById("comment-text").value = "";
     document.getElementById("comment-form").style.display = "none";
@@ -69,5 +70,11 @@ document.getElementById("submit-comment").addEventListener("click", () => {
     alert("Будь ласка, напишіть коментар перед відправкою ;)");
   }
 });
+
+closePopup.addEventListener("click", () => {
+  popup.classList.remove("active"); 
+});
+
+
 
 updateRatingUI(ratings);
