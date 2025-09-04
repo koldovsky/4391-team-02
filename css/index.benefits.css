@@ -109,6 +109,9 @@
         max-width: 450px;
         max-height: 450px;
       }
+      .benefits__image-wrapper a {
+        display: block;
+      }
       .benefits__image-wrapper1 {
         grid-row: span 2;
         grid-column: span 8;
