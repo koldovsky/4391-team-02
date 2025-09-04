@@ -9,6 +9,7 @@ function init() {
   import("./contacts.js");
   import("./offers.js");
   import("./work.js");
+  import("./services.js")
 }
 
 const totalPartials = document.querySelectorAll(
